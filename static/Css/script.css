@@ -11,6 +11,7 @@ img {
 }
 
 *{
+    overflow: hidden;
     box-sizing: border-box;
     margin: 0px ;
     padding: 0px;
@@ -18,7 +19,7 @@ img {
     outline: none;
 }
 main{
-    height: 100vh;
+   
     position: relative;
     background-image:  linear-gradient(to bottom, var(--cor1), var(--cor2));
 
@@ -29,7 +30,7 @@ main{
     background-color:white;
     width: 300px;
     height: 500px;
-    top: 50%;
+    top: 40%;
     left:50%;
     transform:  translate(-50%,-50%);
     border-radius: 10px;
