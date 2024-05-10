@@ -89,6 +89,7 @@ main{
 .footer{
     text-align: center;
     margin-top: 15px;
+    max-width: 500px;
    
 }
 .footer span{
