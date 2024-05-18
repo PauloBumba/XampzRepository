@@ -4,7 +4,7 @@ img {
     width: 65%;
 }
 :root{
-    --cor1 :  #04bf0a;
+    --cor1 :  #07980cd7;
     --cor2:rgba(18, 200, 236, 0.843);
     --cor3: #065716;
     --cor4: #e0e0e0;
@@ -67,6 +67,7 @@ main{
    margin-left: 16px;  
    border-radius: 5px;
    border: 1px solid var(--cor3);
+
 }
 #entrar{
     height: 35px;
@@ -75,12 +76,22 @@ main{
     margin-bottom: 15px;
     margin-left: 16px; 
     margin-top: 20px; 
-    border: 1px solid var(--cor3);
+    border: 1px solid var(--cor1);
     border-radius: 5px;
     cursor: pointer;
     background-color: var(--cor1);
+    background-color: var(--cor2);
     color: white;
     font-weight: 600;
+    transition-duration: 0.6s;
+    
+    
+}
+#entrar:hover{
+    background-color: var(--cor1);
+    transform: translate(-3px,-3px);
+  
+
 }
 #check{
     
