@@ -90,6 +90,7 @@ main{
 #entrar:hover{
     background-color: var(--cor2);
     transform: translate(-3px,-3px);
+    border: none;
   
 
 }
