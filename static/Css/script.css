@@ -76,7 +76,7 @@ main{
     margin-bottom: 15px;
     margin-left: 16px; 
     margin-top: 20px; 
-    
+    border: 1px solid var(--cor3);
     border-radius: 5px;
     cursor: pointer;
     background-color: var(--cor1);
