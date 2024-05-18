@@ -80,7 +80,7 @@ main{
     border-radius: 5px;
     cursor: pointer;
     background-color: var(--cor1);
-    background-color: var(--cor2);
+    
     color: white;
     font-weight: 600;
     transition-duration: 0.6s;
@@ -88,7 +88,7 @@ main{
     
 }
 #entrar:hover{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     transform: translate(-3px,-3px);
   
 
