@@ -32,6 +32,7 @@ img {
 }
 header {
     box-shadow: 1px 1px 2px black;
+    border-bottom: 2px solid var(--cor1);
 }
 header li{
     opacity: 0;
@@ -59,8 +60,8 @@ main{
     position: absolute;
     background-color:white;
     width: 80%;
-    height: 180px;
-    top: 40%;
+    height: 200px;
+    top: 30%;
     left:50%;
     transform:  translate(-50%,-50%);
     border-radius: 5px;
@@ -75,7 +76,7 @@ h1{
     font-size: 20px;
     text-align: center;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 
 }
 input{
@@ -83,7 +84,7 @@ input{
     height: 30px;
     padding: 10px;
     margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-radius: 5px;
     border: 1px solid var(--cor1);
     
