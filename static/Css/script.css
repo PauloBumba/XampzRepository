@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 img {
-    width: 65%;
+    width: 45%;
 }
 :root{
     --cor1 :  #07980cd7;
@@ -91,6 +91,7 @@ main{
     background-color: var(--cor2);
     transform: translate(-3px,-3px);
     border: none;
+    
   
 
 }

@@ -3,10 +3,10 @@
 @media screen  and (min-width:769px )
 {
     img {
-        width: 65%;
+        width: 45%;
     }
     :root{
-        --cor1 :  #04bf0a;
+        --cor1 :  #07980cd7;
         --cor2:rgba(18, 200, 236, 0.843);
         --cor3: #065716;
         --cor4: #e0e0e0;
