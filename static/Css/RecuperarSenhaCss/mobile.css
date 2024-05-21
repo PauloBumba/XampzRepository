@@ -33,6 +33,7 @@ img {
 }
 header {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.84);
+    background-color: white;
     
 }
 header li{
@@ -48,7 +49,7 @@ body{
     outline-color: invert;
 }
 
-main{
+body , main{
     position: relative
     ;
     
@@ -62,7 +63,7 @@ main{
     background-color:white;
     width: 80%;
     height: 200px;
-    top: 30%;
+    top: 35%;
     left:50%;
     transform:  translate(-50%,-50%);
     border-radius: 5px;
@@ -105,4 +106,27 @@ input{
     transition-duration: 1s;
    
 
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    position: fixed;
+    top: 1%;
+    left: 70%;
+    width: 120px;
+    background-image: linear-gradient(to bottom , var(--cor1), var(--cor2));
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+   
+  
+}
+nav a{
+    display: block;
+    
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+   
 }
