@@ -42,6 +42,7 @@ header li{
 #burger{
     margin-right: 10px;
     font-size: 25px;
+   cursor: pointer;
    
 }
 body{
@@ -112,7 +113,7 @@ ul{
 }
 nav{
     position: fixed;
-    top: 1%;
+    top: 2%;
     right: 50px;
     width: 160px;
     background-image: linear-gradient(to bottom , var(--cor1), var(--cor2));
@@ -120,8 +121,13 @@ nav{
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-   
+   display: none;
+   transition: transform 0.2s, box-shadow 0.2s;
   
+}
+#burger:hover{
+    transform: scale(1.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 nav a{
     display: block;
