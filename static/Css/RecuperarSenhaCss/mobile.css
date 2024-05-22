@@ -64,7 +64,7 @@ body , main{
     background-color:white;
     width: 80%;
     height: 200px;
-    top: 35%;
+    top: 30%;
     left:50%;
     transform:  translate(-50%,-50%);
     border-radius: 5px;
@@ -84,7 +84,7 @@ h1{
 }
 input{
     width: 90%;
-    height: 30px;
+    height: 35px;
     padding: 10px;
     margin-left: 20px;
     margin-bottom: 40px;
@@ -121,13 +121,15 @@ nav{
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-  
-   display: none;
+    transition-duration: 1s;
+    display: none;
   
 }
 #burger:hover{
     transform: scale(1.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    transform-origin: top;
 }
 nav a{
     display: block;
@@ -147,6 +149,7 @@ nav a{
 }
 nav a:hover{
     transform: translate(-1px,-10px);
+    
    
 
 }
