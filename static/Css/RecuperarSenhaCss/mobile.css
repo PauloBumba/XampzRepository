@@ -28,6 +28,8 @@ img {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 30px;
+    position: sticky;
+    top: 0;
   
 
 }
