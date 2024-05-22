@@ -121,8 +121,8 @@ nav{
     border-radius: 10px;
     text-align: center;
     padding: 10px;
+  
    display: none;
-   transition: transform 0.2s, box-shadow 0.2s;
   
 }
 #burger:hover{
