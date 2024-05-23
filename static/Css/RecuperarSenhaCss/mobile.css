@@ -60,6 +60,11 @@ ul{
 
         
     }
+    #burger:hover{
+        transform: scale(1.4);
+        transition-duration: 1s;
+        text-shadow: 1px 1px 1px black;
+    }
     nav  {
 
         display: none;
@@ -91,7 +96,7 @@ ul{
     width: 330px;
     height: 210px;
     background-color: white;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 5px;
