@@ -121,7 +121,7 @@ nav{
     right: 50px;
     width: 160px;
     background-image: linear-gradient(to bottom , var(--cor1), var(--cor2));
-    height: 160px;
+    height: 140px;
     border-radius: 10px;
     text-align: center;
     padding: 10px;
@@ -145,7 +145,7 @@ nav a{
     padding-top: 5px;
     cursor: pointer;
     transition-duration: 1s;
-    margin-top: 25px;
+    margin-top: 20px;
     
    
   
