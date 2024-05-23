@@ -1,12 +1,7 @@
 @charset "UTF-8";
 @media  screen and (min-width:769px) 
 {
-  
-img {
-    width:80 %
-    font-size: 25px;
-    margin-left: 10px;
-}
+
 :root{
     --cor1 :  #07980cd7;
     --cor2:rgba(18, 200, 236, 0.843);
