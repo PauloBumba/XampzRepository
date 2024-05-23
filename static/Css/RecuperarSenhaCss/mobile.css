@@ -96,11 +96,13 @@ ul{
     width: 330px;
     height: 210px;
     background-color: white;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 5px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.61);
+    transition: width 1s, height 1s ease-in-out;
+    
 }
 h1{
     font-size: 20px;
@@ -114,7 +116,7 @@ input{
     padding: 10px;
     border-radius: 6px;
     border: 1px solid var(--cor1);
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 30px;
 }
 #sub{

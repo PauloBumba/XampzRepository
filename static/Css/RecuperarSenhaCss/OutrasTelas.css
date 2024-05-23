@@ -16,7 +16,7 @@
     }
 
     img {
-        height: 45px;
+        height: 40px;
     }
 
     nav li  {
@@ -25,12 +25,14 @@
         margin-right: 10px;
         color: black;
     }
-    
+   
     
     #burger {
         display: none;
     }
-
+    nav a{
+        color: black;
+    }
     .form {
         width: 550px;
         height: 250px;
