@@ -1,0 +1,68 @@
+@charset "utf-8";
+:root{
+    --cor1 :  #07980cd7;
+    --cor2:rgba(18, 200, 236, 0.843);
+    --cor3: #065716;
+    --cor4: #e0e0e0;
+    --cor5:blue;
+}
+
+@media screen and (min-width:769px)
+{
+   
+    #burger{display: none;}
+    header
+    {
+        padding-top: 15px;
+    }
+   
+   #navbar
+   {
+     display: flex;
+     flex-direction: row;  
+     justify-content: space-around;
+     align-items: center;
+    
+     padding: 10px;
+    }
+    #login{
+        margin-right: 15px;
+        text-decoration: none;
+        padding: 10px;
+        background: white;
+        border-radius: 10px;
+        color: black;
+        font-weight: 500;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.364);
+        cursor: pointer;
+
+    }
+    #login:hover{
+       
+        transition-duration: 0.4s;
+        transform:translate(-3px,-3px);
+    }
+
+    #menu  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        
+    }
+    nav a {
+        margin: 15px;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        color: black;
+
+    }
+    nav a:hover{
+        padding: 5px;
+        border-bottom:2px solid white ;
+        transition-duration: 0.5s;
+        transform: translate(-1px,-1px);
+    }
+
+}
