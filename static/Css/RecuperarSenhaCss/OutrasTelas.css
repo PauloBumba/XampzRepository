@@ -38,14 +38,15 @@
         height: 250px;
     }
     
-    nav li :hover{
+    nav a :hover{
         background-image: linear-gradient(to bottom,var(--cor1),var(--cor2));
         padding: 10px;
         color: white;
         border-radius: 5px;
         text-shadow: 1px 2px 3px black;
-        transform-origin: 1s;
-        ;
+        transform-origin: 0.5s;
+       
+        
 
        
     }
