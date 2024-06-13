@@ -29,6 +29,10 @@ img {
 main{
     background-color: var(--cor4);
     
+        z-index: 1; /* Ajuste conforme necessário */
+
+    
+   
 }
 body,html{
     height: 100vh;
@@ -42,8 +46,14 @@ header{
     width: 100%;
     position: sticky;
     top:0;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.295);
+    
+    
     z-index: 3;
-   
+    
+     /* Ajuste conforme necessário */
+    
+    
     width: 100%;
 }
 nav ul {

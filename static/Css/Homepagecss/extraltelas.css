@@ -28,6 +28,7 @@
     }
     #login
     {
+        width: 80px;
         margin-right: 15px;
         text-decoration: none;
         padding: 10px;
@@ -38,6 +39,8 @@
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.364);
         cursor: pointer;
         animation: pulse 1s infinite;
+        text-align: center;
+        
       
     }
     @keyframes pulse 
