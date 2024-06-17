@@ -40,7 +40,7 @@ main{
 }
 body,html{
     height: 100vh;
-    background-color: var(--cor3);
+   
     
     
 }
@@ -64,15 +64,15 @@ nav ul {
 footer
 {
     margin-top: 10px;
-    background-image: url(../../images/wave.svg);
+    width: 100%;
     background-image: linear-gradient(to bottom,var(--cor1),var(--cor2));
     display: flex;
     justify-content: space-between;
     padding: 0px 8% 24px 8%;
     align-items: center;
     padding-top: 20px;
-    background-color: var(--cor5);
-    ba
+    
+    
 }
 #copy{
     color:white;

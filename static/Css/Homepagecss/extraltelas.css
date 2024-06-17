@@ -93,13 +93,15 @@
 
     footer
 {
-    margin-top: 10px;
-    background-image: linear-gradient(to bottom,var(--cor1),var(--cor2));
+    
+
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor2));
     display: flex;
     justify-content: space-between;
     padding: 0px 8% 24px 8%;
     align-items: center;
     padding-top: 20px;
+    
 }
 #copy{
     color:white;
