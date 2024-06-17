@@ -3,9 +3,13 @@
 
 img {
     height: 50px;
-    
     font-size: 25px;
     margin-left: 10px;
+    
+    filter: brightness(0) invert(1);
+    
+      
+    
     
    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.422);
 }
@@ -46,15 +50,13 @@ header{
     width: 100%;
     position: sticky;
     top:0;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.295);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.448);
+    background-color: var(--cor5);
     
     
     z-index: 3;
     
-     /* Ajuste conforme necessário */
-    
-    
-    width: 100%;
+
 }
 nav ul {
     list-style-type: none;
@@ -62,12 +64,15 @@ nav ul {
 footer
 {
     margin-top: 10px;
+    background-image: url(../../images/wave.svg);
     background-image: linear-gradient(to bottom,var(--cor1),var(--cor2));
     display: flex;
     justify-content: space-between;
     padding: 0px 8% 24px 8%;
     align-items: center;
     padding-top: 20px;
+    background-color: var(--cor5);
+    ba
 }
 #copy{
     color:white;
