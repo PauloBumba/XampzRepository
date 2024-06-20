@@ -1,11 +1,9 @@
 @charset "UTF-8";
-@charset "UTF-8";
 
 img {
     height: 50px;
     font-size: 25px;
     margin-left: 10px;
-    
     filter: brightness(0) invert(1);
     
       
@@ -18,7 +16,7 @@ img {
     --cor2:rgba(18, 200, 236, 0.843);
     --cor3: #065716;
     --cor4: #e0e0e0;
-    --cor5:blue;
+    --cor5:rgb(0, 128, 255);
 }
 
 *{
@@ -71,6 +69,7 @@ footer
     padding: 0px 8% 24px 8%;
     align-items: center;
     padding-top: 20px;
+    background-color: var(--cor5);
     
     
 }
