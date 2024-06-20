@@ -1,5 +1,8 @@
-@media screen and (min-width: 769px) {
-    :root {
+@media screen and (min-width: 769px) 
+{
+    :root 
+    
+    {
         --cor1 :  #07980cd7;
         --cor2:rgba(18, 200, 236, 0.843);
         --cor3: #065716;
@@ -15,30 +18,37 @@
         outline: none;
     }
 
-    img {
+    img 
+    {
         height: 40px;
+        margin-left: 40px;
     }
 
-    nav li  {
+    nav li  
+    {
         display: inline-block;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 40px;
         color: black;
     }
    
     
-    #burger {
+    #burger 
+    {
         display: none;
     }
-    nav a{
+    nav a
+    {
         color: black;
     }
-    .form {
+    .form 
+    {
         width: 550px;
         height: 250px;
     }
     
-    nav a :hover{
+    nav a :hover
+    {
         background-image: linear-gradient(to bottom,var(--cor1),var(--cor2));
         padding: 10px;
         color: white;
@@ -46,8 +56,5 @@
         text-shadow: 1px 2px 3px black;
         transform-origin: 0.5s;
        
-        
-
-       
-    }
+     }
 }

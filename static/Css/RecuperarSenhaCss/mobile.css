@@ -5,7 +5,7 @@ img {
     height: 35px;
     
     font-size: 25px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 :root{
     --cor1 :  #07980cd7;
@@ -52,18 +52,22 @@ ul{
 }
 @media screen and (max-width:769px)
  {
-    #burger{
+    #burger
+    {
         position: relative;
-        margin-right: 10px;
+        margin-right: 15px;
         font-size: 25px;
         overflow: hidden;
         padding: 10px;
-
+        border: 2px solid black;
+        border-radius: 5px;
         
-    }
+
+   }
   
-    #burger:hover{
-        transform: scale(1.4);
+    #burger:hover
+    {
+        transform: scale(1.1);
         transition-duration: 1s;
         text-shadow: 1px 1px 1px black;
     }
