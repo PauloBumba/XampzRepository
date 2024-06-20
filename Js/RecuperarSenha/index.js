@@ -3,7 +3,11 @@ $(document).ready(function () {
    
     $(window).resize(function (){
         if($(window).innerWidth()>=769){
-            $("menu").show();
+            $("#menu").show();
+
+        }
+        else{
+            $("#menu").hide();
 
         }
     })
