@@ -68,23 +68,28 @@
     #cta{
         text-align: center;
         align-items: center;
+        max-width:  550px;
         
         
     }
     #cta h1{
         font-size: 42px;
-        max-width: 550px;
         padding-bottom: 10px;
 
     }
-    #cta p{
-        
-        max-width:  550px;
+    #cta p
+    {
+        font-size: 19px;
         padding: 10px;
+        max-width: 400px;
+        margin-left: 45px;
         text-align: center;
-        font-size:18px ;
+      
     }
     #cta_buttons{
+        padding: 10px;
+        margin: 10px;
+
 
     }
 
