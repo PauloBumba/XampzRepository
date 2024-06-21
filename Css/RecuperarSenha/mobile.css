@@ -44,7 +44,7 @@ body{
 
 }
 header {
-    background-color: white;
+    background-color: var(--cor4);
 
 }
 ul{

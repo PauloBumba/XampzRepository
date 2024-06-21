@@ -99,12 +99,7 @@
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.515);
     }
     
-    
 
-
-
-        
-    }
      #cta #phone_button{
         padding: 10px;
         margin: 10px;
@@ -141,13 +136,5 @@
     
 
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-    footer div{
-        padding: 5px;
-    }
-
 }
+
