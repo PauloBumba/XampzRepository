@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-img {
+ header img {
     height: 50px;
     font-size: 25px;
     margin-left: 20px;
@@ -38,6 +38,7 @@ main{
 }
 body,html{
     height: 100vh;
+    background-color: var(--cor4);
    
     
     
@@ -90,4 +91,19 @@ footer
 {
     transition-duration: 0.5s;
     transform: translate(-10px,-10px);
+}
+#home{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+ #home img{
+    display: none;
+}
+span{
+    color: var(--cor1);
+    
 }
