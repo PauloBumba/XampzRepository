@@ -24,7 +24,7 @@ animacao.reveal('.dish', {
     origin: 'left',
     distance: '30%',
     duration:2000,
-    delay:500,
+    delay:250,
     
     reset :true
 });
@@ -40,7 +40,7 @@ animacao.reveal('.feedback', {
     origin: 'rigth',
     distance: '30%',
     duration:2000,
-    delay:700,
+    
     
     reset :true
 });
