@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: Fonte-destaque;
+    src: url(../../Assets/Font/Roboto-Regular.ttf)format
+    ("ttf");
+    
+}
 
 :root{
     --cor1 :  #07980cd7;
@@ -7,6 +13,8 @@
     --cor3: #065716;
     --cor4: #e0e0e0;
     --cor5:rgb(0, 128, 255);
+    --cor6: background-color: rgba(180, 180, 180, 0.534);
+    --font-family1: 'Fonte-destaque';
 }
 
 @media screen and (max-width:769px)
@@ -138,6 +146,8 @@
         padding:5px;
         background-image: linear-gradient( to right , var(--cor2), transparent);
         margin-bottom: 10px;
+        font-family:" Fonte-destaque";
+        font-weight: bolder;
     }
     .section-subtitle{
         max-width: 400px;
@@ -153,14 +163,16 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: rgba(155, 154, 154, 0.778);
+        background-color: rgba(180, 180, 180, 0.534);
         border-radius: 10px;
         overflow: hidden;
-        width: 85%;
+        width: 90%;
         margin: auto;
         padding: 15px;
         margin-top: 25px;
         position: relative;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312);
+        
 
     }
     .dish-heart {
@@ -204,7 +216,77 @@
         font-weight: bolder;
         margin: 10px;
 
+    }#testemunhos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 50px;
     }
+    .feedback img{
+      border-radius: 50%;
+      width: 80px;
+      margin-bottom: 20px;
+      display: block;
+      margin: auto;
+      
+    }
+     #testemunhos #testimonial_chef{
+        display: none;
+    }
+    .feedback {
+        background-color: rgba(180, 180, 180, 0.534);
+        margin: 20px;
+        margin-top: 40px;
+        padding: 10px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.519);
+    
+
+    }
+    .feedback p{
+        padding: 10px;
+        
+    }
+    #testemunhos button {
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        background-color: var(--cor1);
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border: none;
+        animation: pulse 1s infinite;
+        font-family: var(--font-family1);
+    }
+    @keyframes pulse 
+    {
+        0%
+        {
+            transform: scale(1);
+            
+        }
+        50%
+        {
+            transform: scale(1.2);
+           
+        }
+        100%
+        {
+            transform: scale(1);
+            
+        }
+        
+    }
+    #testemunhos button a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        
+    } 
 
 
 }

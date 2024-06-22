@@ -11,12 +11,18 @@
     
    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.422);
 }
+@font-face {
+    font-family: Fonte-destaque;
+    src: url(../../Assets/Font/Roboto-Regular.ttf)format
+    ("ttf");
+}
 :root{
     --cor1 :  #07980cd7;
     --cor2:rgba(18, 200, 236, 0.843);
     --cor3: #065716;
     --cor4: #e0e0e0;
     --cor5:rgb(0, 128, 255);
+    --font-family1: var(Fonte-destaque);
 }
 
 *{
