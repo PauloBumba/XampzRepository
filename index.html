@@ -128,8 +128,74 @@
                         <i class="fa-solid fa-star"></i>
                         <span>(500+)</span>
                     </div>
-                   
+                    
                     <button class="select-modality-button">Selecionar Modalidade</button>
+                </div>
+                <div id="extrascreem">
+                    <div class="dish">
+                        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                        <img src="Assets/Images/Truco.png" class="dish-image" alt="">
+                        <h3 class="dish-title">Lorem Ipsum</h3>
+                        <span class="dish-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+                        
+                        <button class="select-modality-button">Selecionar Modalidade</button>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                        <img src="Assets/Images/Mortal.png" class="dish-image" alt="">
+                        <h3 class="dish-title">Lorem Ipsum</h3>
+                        <span class="dish-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+                        
+                        <button class="select-modality-button">Selecionar Modalidade</button>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                        <img src="Assets/Images/Atletismo.png" class="dish-image" alt="">
+                        <h3 class="dish-title">Lorem Ipsum</h3>
+                        <span class="dish-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+                        
+                        <button class="select-modality-button">Selecionar Modalidade</button>
+                    </div>
+                    <div class="dish">
+                        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                        <img src="Assets/Images/Andebal.png" class="dish-image" alt="">
+                        <h3 class="dish-title">Lorem Ipsum</h3>
+                        <span class="dish-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+                        
+                        <button class="select-modality-button">Selecionar Modalidade</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -187,32 +253,9 @@
     </footer>
 
     <script src="Js/Homepage/index.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".image-upload-button").click(function() {
-                $(this).siblings(".image-upload-input").click();
-            });
 
-            $(".image-upload-input").change(function() {
-                const fileInput = this;
-                const reader = new FileReader();
-
-                reader.onload = function(e) {
-                    $(fileInput).siblings("img.dish-image").attr("src", e.target.result);
-                }
-
-                reader.readAsDataURL(this.files[0]);
-            });
-
-            $(".select-modality-button").click(function() {
-                $(this).toggleClass("selected");
-                if ($(this).hasClass("selected")) {
-                    $(this).text("Modalidade Selecionada");
-                } else {
-                    $(this).text("Selecionar Modalidade");
-                }
-            });
-        });
+          
+        
     </script>
 </body>
 </html>

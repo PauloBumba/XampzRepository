@@ -17,7 +17,7 @@
     --font-family1: 'Fonte-destaque';
 }
 
-@media screen and (max-width:769px)
+@media screen and (max-width:992px)
 {
     
 
@@ -76,7 +76,7 @@
     #cta{
         text-align: center;
         align-items: center;
-        max-width:  550px;
+        
         
         
     }
@@ -89,12 +89,13 @@
     {
         font-size: 19px;
         padding: 10px;
-        max-width: 400px;
+        
         
         text-align: center;
         margin-bottom: 10px;
       
     }
+    
     
     #cta_buttons a {
         padding: 10px;
@@ -172,23 +173,31 @@
         font-weight: bolder;
     }
     .section-subtitle{
-        max-width: 400px;
+        
         text-align: center;
         font-weight: bolder;
         padding: 10px;
 
     }
+    #extrascreem{
+        display: none;
+    }
     #homepage{
         position: relative;
+    }
+    #dishes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .dish{
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: rgba(180, 180, 180, 0.534);
+        background-color: white;
         border-radius: 10px;
         overflow: hidden;
-        width: 90%;
+       
         margin: auto;
         padding: 15px;
         margin-top: 25px;
@@ -197,6 +206,7 @@
         
 
     }
+    
     .dish-heart {
         position: absolute;
         background-color: var(--cor1);
@@ -257,7 +267,7 @@
         display: none;
     }
     .feedback {
-        background-color: rgba(180, 180, 180, 0.534);
+        background-color: white;
         margin: 20px;
         margin-top: 40px;
         padding: 10px;
@@ -310,6 +320,12 @@
         font-weight: 700;
         
     } 
+    @media screen  and (max-width:798px){
+        .dish{
+            flex: 0 0 90%;
+        }
+        
+    }
 
 
 }

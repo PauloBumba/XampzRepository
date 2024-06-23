@@ -7,3 +7,9 @@
     --cor5:blue;
 }
 
+@media (min-width: 768px) and (max-width:991px) {
+    .dish{
+        flex: 0 0 calc(50%-40px);
+    }
+    
+}

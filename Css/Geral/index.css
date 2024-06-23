@@ -63,13 +63,25 @@ header{
     
 
 }
+.select-modality-button{
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--cor2);
+    font-weight: bolder;
+
+
+}
+
 nav ul {
     list-style-type: none;
 }
-.dishes {
+#dishes {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 footer
 {
@@ -108,7 +120,4 @@ footer
 span{
     color: var(--cor1);
     
-}
-section img main{
-    display: none;
 }

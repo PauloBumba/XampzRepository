@@ -16,6 +16,14 @@ $(document).ready(function () {
         $(this).toggleClass("fa-bars fa-times");
         $("#menu").toggle();
     });
+    $(".select-modality-button").click(function() {
+        $(this).toggleClass("selected");
+        if ($(this).hasClass("selected")) {
+            $(this).text("Modalidade Selecionada");
+        } else {
+            $(this).text("Selecionar Modalidade");
+        }
+    });
     
 });
 
