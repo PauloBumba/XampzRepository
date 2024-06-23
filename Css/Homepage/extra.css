@@ -201,6 +201,9 @@
         padding: 10px;
 
     }
+    #home{
+        overflow: hidden;
+    }
     .dish{
         display: flex;
         flex-direction: column;
@@ -285,7 +288,7 @@
         margin-left: 40px;
         margin-right: 40px;
         box-shadow:  5px  5px 10 black;
-        margin-top: -60PX;
+        margin-top: -50PX;
 
     }
     .feedback {

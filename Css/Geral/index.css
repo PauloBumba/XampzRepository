@@ -34,6 +34,7 @@
   
     
 }
+
 main{
     background-color: var(--cor4);
     
@@ -74,6 +75,8 @@ header{
     border: none;
     box-shadow: 1px 3px 5px rgba(4, 4, 177, 0.297);
     margin-bottom: 10PX;
+    color:white;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.304);
 
 
 }
