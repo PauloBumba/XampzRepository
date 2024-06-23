@@ -93,18 +93,9 @@
         transition-duration: 0.5s;
         transform: translate(-1px,-1px);
     }
-    #home
-    {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
 
-    }
-    #banner{
-        display: none;
-    }
-
-    footer
+   
+footer
 {
     
 
@@ -134,5 +125,4 @@
     transition-duration: 0.5s;
     transform: translate(-10px,-10px);
 }
-
-}
+     }
