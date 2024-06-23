@@ -193,9 +193,9 @@
         text-align: center;
         background-color: white;
         border-radius: 10px;
+
+        flex: 1 1 calc(100% / 2 - 20px);
         overflow: hidden;
-        flex: 1 1 calc(100%/2 - 20px);
-        
         padding: 15px;
         margin-top: 25px;
         position: relative;
