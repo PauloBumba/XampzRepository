@@ -16,6 +16,7 @@ $(document).ready(function () {
         $(this).toggleClass("fa-bars fa-times");
         $("#menu").toggle();
     });
+    
 });
 
 

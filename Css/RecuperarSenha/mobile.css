@@ -13,6 +13,7 @@ img {
     --cor3: #065716;
     --cor4: #e0e0e0b5;
     --cor5:  #0fc416d7;
+    --cor6:rgb(0, 128, 255);
 }
 
 *{
@@ -29,6 +30,7 @@ body{
     overflow-y: hidden;
     background-size: cover;
     position: relative;
+    --cor5:rgb(0, 128, 255);
 }
 .top{
     display: flex;
