@@ -194,7 +194,7 @@
         background-color: white;
         border-radius: 10px;
         overflow: hidden;
-        flex: 1 1 calc(100%/2 - 40px);
+        flex: 1 1 calc(100%/2 - 20px);
         
         padding: 15px;
         margin-top: 25px;
@@ -232,7 +232,7 @@
     }
     .dish-description{
         color: black;
-        
+        width: 350px;
 
     }
     .dish-rate{
