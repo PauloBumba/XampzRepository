@@ -70,6 +70,9 @@ header{
     padding: 10px;
     background-color: var(--cor2);
     font-weight: bolder;
+    border: none;
+    box-shadow: 1px 3px 5px rgba(4, 4, 177, 0.297);
+    margin-bottom: 10PX;
 
 
 }
@@ -77,12 +80,19 @@ header{
 nav ul {
     list-style-type: none;
 }
+/* Estilos gerais */
 #dishes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: center;
+    gap: 20px; /* Espaço entre os itens */
+    padding: 10px; 
 }
+
+
+
+
+
 footer
 {
     margin-top: 10px;

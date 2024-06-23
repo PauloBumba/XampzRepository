@@ -180,16 +180,13 @@
 
     }
     #extrascreem{
-        display: none;
+        
     }
     #homepage{
         position: relative;
     }
-    #dishes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+   
+
     .dish{
         display: flex;
         flex-direction: column;
@@ -197,8 +194,8 @@
         background-color: white;
         border-radius: 10px;
         overflow: hidden;
-       
-        margin: auto;
+        flex: 1 1 calc(100%/2 - 40px);
+        
         padding: 15px;
         margin-top: 25px;
         position: relative;
@@ -320,12 +317,7 @@
         font-weight: 700;
         
     } 
-    @media screen  and (max-width:798px){
-        .dish{
-            flex: 0 0 90%;
-        }
-        
-    }
+   
 
 
 }
