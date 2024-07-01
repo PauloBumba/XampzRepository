@@ -62,7 +62,7 @@ header{
     background-color: var(--cor5);
     
     
-    z-index: 3;
+    z-index: 1000;
     
 
 }
