@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="../Assets/Images/logo-bw.png" type="image/x-icon">    
+   
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .tela {
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 90%;
+            max-width: 400px;
+        }
+        .HeaderLogin {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .HeaderLogin img {
+            width: 150px;
+        }
+        .HeaderLogin p {
+            margin-top: 10px;
+        }
+        .MainLogin {
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form p {
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer span {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        #login {
+            text-align: center;
+            margin-top: 10px;
+        }
+        #login a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        #login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="tela">
+            <aside class="HeaderLogin">
+                <img src="../Assets/Images/Logo-XAMPZ.png" alt="Logotipo">
+                <p>Crie sua conta para desfrutar da sua plataforma</p>
+            </aside>
+            <aside class="MainLogin"> 
+                <form action="/submit_registration" method="post" autocomplete="on">
+                    <p> 
+                        <label for="nome">Nome de usuário:</label>
+                        <input type="text" name="username" id="nome" required placeholder="Informe seu nome de usuário">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required placeholder="Informe seu email">
+                    </p>
+                    <p>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="password" id="senha" required placeholder="Informe sua senha">
+                    </p>
+                    <p>
+                        <label for="confirm_senha">Confirme a senha:</label>
+                        <input type="password" name="confirm_password" id="confirm_senha" required placeholder="Confirme sua senha">
+                    </p>
+                    <p>
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep" required placeholder="Informe seu CEP">
+                    </p>
+                    <p>
+                        <label for="rua">Rua:</label>
+                        <input type="text" name="rua" id="rua" required placeholder="Informe o nome da sua rua">
+                    </p>
+                    <p>
+                        <label for="numero">Número:</label>
+                        <input type="text" name="numero" id="numero" required placeholder="Informe o número do seu endereço">
+                    </p>
+                    <p>
+                        <label for="pais">País:</label>
+                        <input type="text" name="pais" id="pais" required placeholder="Informe seu país">
+                    </p>
+                    <p>
+                        <label>Sexo:</label><br>
+                        <label for="sexo-masculino">
+                            <input type="radio" name="sexo" id="sexo-masculino" value="masculino"> Masculino
+                        </label>
+                        <label for="sexo-feminino">
+                            <input type="radio" name="sexo" id="sexo-feminino" value="feminino"> Feminino
+                        </label>
+                        <label for="sexo-outro">
+                            <input type="radio" name="sexo" id="sexo-outro" value="outro"> Outro
+                        </label>
+                    </p>
+                    <input type="submit" id="registrar" value="Registrar">
+                    <p class="footer"><small>Ao se registrar neste site, você concorda com os <span>termos</span> e <span>políticas</span> do Xampz</small></p>
+                    <p id="login"> <a href="./Login.html" id="login">Já tem uma conta? Faça login</a></p>
+                </form>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
