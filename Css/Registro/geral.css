@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *{
     padding: 0px;
     margin: 0px;
@@ -26,7 +27,7 @@ body,html{
 }
 
 img {
-    width: 35%;
+    width: 45%;
 }
 div{
     max-width: 800px;
@@ -45,25 +46,118 @@ div{
     gap: 20px;
     padding: 10px;
     
+    
 }
 .HeaderLogin h1{
     text-align: center;
+    color: var(--cor3);
 }
 fieldset {
-    padding: 20px;
+    padding: 18px;
     border-radius: 5px;
 
 }
 fieldset legend{
   
    font-weight: 600;
+   font-size: 20px;
 }
-input{
-    margin-top: 10px;
-    height: 25px;
-    border-radius: 5px;
-   padding: 10px;
-}
+
 span{
     color: #065716;
-    font-weight: bolder;}
+    font-weight: bolder;
+}
+.MainLogin form input[type="text"],
+.MainLogin form input[type="date"],
+.MainLogin form input[type="number"],
+
+.MainLogin form input[type="email"],
+.MainLogin form input[type="tel"]
+{
+    width: 95%;
+    border: 2px solid var(--cor3);
+   height: 30px;
+   padding: 15px;
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+.MainLogin form input[type="password"]{
+    width: 82%;
+    border: 2px solid var(--cor3);
+    height: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+button{
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: -5px;
+   font-weight: 500;
+    background-color: var(--cor2);
+
+}
+
+fieldset #Gender  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    accent-color: var(--cor1);
+}
+select{
+    margin: 10px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--cor3);
+    font-weight: 600;
+    background-color: var(--cor2);
+}
+select:hover,input[type="button"]:hover ,input[type="submit"]:hover , input[type="reset"]:hover ,button:hover{
+    background-color: var(--cor1);
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    transform: translate(-10px,-1px);
+}
+input[type="button"]{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--cor2);
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+   color: var(--cor3);
+}
+input[type="checkbox"]{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+   
+    accent-color: var(--cor3);
+}
+input[type="submit"] , input[type="reset"]{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--cor2);
+}

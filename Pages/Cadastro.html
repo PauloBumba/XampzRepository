@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="../Assets/Images/logo-bw.png" type="image/x-icon"> 
     <link rel="stylesheet" href="../Css/Registro/geral.css">   
+    <link rel="stylesheet" href="../Css/Registro/ExtraScreem.css">   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Registro</title>
-    <style>
-        
-    </style>
+    
 </head>
 <body>
     <div>
@@ -23,19 +22,19 @@
         <main>
            
                 <aside class="MainLogin">
-                    <form action="" method="post" autocomplete="on">
+                    <form action="" method="post" autocomplete="on" id="Send">
                         <fieldset id="person">
                             <legend>Dados Pessoais</legend>
+                            <p> <label for="">Nome Completo :</label></p>
                             <p>
-                                <label for="">Nome Completo</label>
-                                <input type="text" name="" id="" required placeholder="Nome Completo" autocomplete="cc-name">
+                                <input type="text" name="" id="iname" required placeholder="Nome Completo" autocomplete="cc-name">
                             </p>
+                            <p><label for="">Data de Nascimento : </label></p>
                             <p>
-                                <label for="">Data de Nascimento</label>
-                                <input type="date" name="" id="" required>
+                                <input type="date" name="" id="idate" required>
                             </p>
+                            <p>  <label for="">CPF :</label></p>
                             <p>
-                                <label for="">CPF</label>
                                 <input type="number" name="" id="icpf" required placeholder="xxx-xxx-xxx.xx" autocomplete="cc-number">
                             </p>
                             <p>
@@ -52,44 +51,52 @@
                         </fieldset>
                         <fieldset>
                             <legend>Informações do Contato</legend>
+                            <p><label for="Inumber">Número</label></p>
                             <p>
-                                <label for="Inumber">Número</label>
-                                <input type="number" name="" id="Inumber" required placeholder=" (xx) xxxxx -xxxx" autocomplete="cc-number">
+                                
+                                <input type="number" name="" id="Inumber" required placeholder="(xx) xxxxx-xxxx"
+                                autocomplete="cc-number">
                             </p>
+                            <p> <label for="Iemail">Email</label></p>
                             <p>
-                                <label for="Iemail">Email</label>
-                                <input type="email" name="" id="Iemail" required placeholder=" (xx) xxxxx -xxxx" autocomplete="email">
+                               
+                                <input type="email" name="" id="Iemail" required placeholder="seu.email@dominio.com" autocomplete="email">
                             </p>
-                            <fieldset>
+                            <fieldset id="">
                                 <legend>Endereço</legend>
+                                <p> <label for="cep">Cep:</label></p>
                                 <p>
-                                    <label for="cep">Cep:</label>
-                                    <input type="number" name="cep" id="cep" autocomplete="cc-number" required placeholder="xxxx-xxxx">
+                                    <input type="number" name="cep" id="icep" autocomplete="cc-number" required  placeholder="xxxxx-xxx">
                                 </p>
-                                <p><button type="submit">Buscar Cep</button></p>
+                                <p><input type="button" id="SeachCep" value="Buscar Cep"></p>
+                                <p><label for="pais">País:</label></p>
                                 <p>
-                                    <label for="pais">País:</label>
+                                   
                                     <input type="text" name="pais" id="ipais">
                                 </p>
+                                <p><label for="estado">Estado:</label></p>
                                 <p>
-                                    <label for="estado">Estado:</label>
+                                    
                                     <input type="text" name="estado" id="iestado">
                                 </p>
+                                <p> <label for="cidade">Cidade:</label></p>
                                 <p>
-                                    <label for="cidade">Cidade:</label>
+                                   
                                     <input type="text" name="cidade" id="icidade">
                                 </p>
+                                <p>  <label for="bairro">Bairro:</label></p>
                                 <p>
-                                    <label for="bairro">Bairro:</label>
+                                  
                                     <input type="text" name="bairro" id="ibairro">
                                 </p>
+                                <p><label for="rua">Rua:</label></p>
                                 <p>
-                                    <label for="rua">Rua:</label>
+                                    
                                     <input type="text" name="rua" id="irua">
                                 </p>
                                 <p>
                                     <label for="complemento">Complemento:</label>
-                                    <select name="complemento" id="complemento" required>
+                                    <select name="complemento" id="icomplemento" required>
                                         <option value="" disabled selected>Selecione um complemento</option>
                                         <option value="Casa">Casa</option>
                                         <option value="Apartamento">Apartamento</option>
@@ -114,31 +121,35 @@
                         </fieldset>
                         <fieldset>
                             <legend>Informações de Login</legend>
+                            <p><label for="senha">Senha:</label></p>
                             <p>
-                                <label for="senha">Senha:</label>
+                                
                                 <input type="password" id="senha" name="senha">
                                 <button type="button" id="toggleSenha">Mostrar</button>
                             </p>
+                            <p> <label for="confirma_senha">Confirme a Senha:</label></p>
                             <p>
-                                <label for="confirma_senha">Confirme a Senha:</label>
+                               
                                 <input type="password" id="confirma_senha" name="confirma_senha">
                                 <button type="button" id="toggleConfirmaSenha">Mostrar</button>
                             </p>
                         </fieldset>
                        
-                    </form>
+                    
                   
                 </aside>
            
         </main>
-    
+   
 
    <footer>
     <fieldset>
         <legend>Termo de uso</legend>
        
-        <p><input type="submit" id="registrar" value="Registrar"></p>
-        <p><input type="submit" id="registrar" value="Registrar"></p>
+        <p>
+            <input type="submit" value="Registrar">
+        </p>
+        <p><input type="reset" id="registrar" value="Reset"></p>
         <p class="footer">
             <small>Ao se registrar neste site, você concorda com os 
                 <span>
@@ -149,30 +160,17 @@
             </span> 
                 do Xampz
             </small>
-             <input type="checkbox" name="" value=""><small>Assinatura</small>
+             <input type="checkbox" name="" value="" required><small>Assinatura</small>
         </p>
        
-        <p id="login"><a href="./Login.html">Já tem uma conta? Faça login</a></p>
+        <p id="login"><strong><a href="./Login.html">Já tem uma conta? Faça login</a></strong></p>
     </fieldset>
    </footer>
+</form>
 </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#toggleSenha').on('click', function () {
-                var $senhaInput = $('#senha');
-                var type = $senhaInput.attr('type') === 'password' ? 'text' : 'password';
-                $senhaInput.attr('type', type);
-                $(this).text(type === 'password' ? 'Mostrar' : 'Ocultar');
-            });
-
-            $('#toggleConfirmaSenha').on('click', function () {
-                var $confirmaSenhaInput = $('#confirma_senha');
-                var type = $confirmaSenhaInput.attr('type') === 'password' ? 'text' : 'password';
-                $confirmaSenhaInput.attr('type', type);
-                $(this).text(type === 'password' ? 'Mostrar' : 'Ocultar');
-            });
-        });
-    </script>
+    
+    <script src="../Js/Cadastro/ShowPassword.js"></script>
+    <script src="../Js/Cadastro/SeachCep.js"></script>
+    <script src="../Js/Cadastro/validate.js"></script>
 </body>
 </html>
