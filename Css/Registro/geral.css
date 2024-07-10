@@ -135,8 +135,11 @@ select {
     font-weight: 600;
     background-color: var(--cor2);
     height: 40px;
+    color: black;
 }
-
+input[type="date"]{
+color: black;
+}
 select:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
