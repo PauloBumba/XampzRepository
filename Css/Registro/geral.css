@@ -55,7 +55,7 @@ span {
     color: #065716;
     font-weight: bolder;
 }
-.MainLogin form input[type="date"] {
+.custom-date{
     width: 95%;
     border: 2px solid var(--cor3);
     height: 40px;
