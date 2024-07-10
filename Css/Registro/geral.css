@@ -212,4 +212,5 @@ input[type="reset"] {
     font-weight: 600;
     background-color: var(--cor2);
     color:black;
+    height: 40px;
 }
