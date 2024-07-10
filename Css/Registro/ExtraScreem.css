@@ -23,5 +23,8 @@
         border-radius: 10px;
         margin-bottom: 20px;
     }
+    fieldset #Gender{
+        gap: 20px;
+    }
     
 }
