@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../Css/Registro/ExtraScreem.css">   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Registro</title>
-    
 </head>
 <body>
     <div>
@@ -17,158 +16,132 @@
                 <img src="../Assets/Images/Logo-XAMPZ.png" alt="Logotipo">
                 <h1>Crie sua conta para desfrutar da sua plataforma</h1>
             </aside>
-        
         </header>
         <main>
-           
-                <aside class="MainLogin">
-                    <form action="" method="post" autocomplete="on" id="Send">
-                        <fieldset id="person">
-                            <legend>Dados Pessoais</legend>
-                            <p> <label for="">Nome Completo :</label></p>
-                            <p>
-                                <input type="text" name="" id="iname" required placeholder="Nome Completo" autocomplete="cc-name">
-                            </p>
-                            <p><label for="">Data de Nascimento : </label></p>
-                            <p>
-                                <input type="date" name="" id="idate" required>
-                            </p>
-                            <p>  <label for="">CPF :</label></p>
-                            <p>
-                                <input type="number" name="" id="icpf" required placeholder="xxx-xxx-xxx.xx" autocomplete="cc-number">
-                            </p>
-                            <p>
-                                <fieldset id="Gender">
-                                    <legend>Gênero</legend>
-                                    <label for="">Masculino</label>
-                                    <input type="radio" name="Gender" id="Imasculine">
-                                    <label for="">Femenino</label>
-                                    <input type="radio" name="Gender" id="ifemenine">
-                                    <label for="">Outro</label>
-                                    <input type="radio" name="Gender" id="Ianother">
-                                </fieldset>
-                            </p>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Informações do Contato</legend>
-                            <p><label for="Inumber">Número</label></p>
-                            <p>
-                                
-                                <input type="number" name="" id="Inumber" required placeholder="(xx) xxxxx-xxxx"
-                                autocomplete="cc-number">
-                            </p>
-                            <p> <label for="Iemail">Email</label></p>
-                            <p>
-                               
-                                <input type="email" name="" id="Iemail" required placeholder="seu.email@dominio.com" autocomplete="email">
-                            </p>
-                            <fieldset id="">
-                                <legend>Endereço</legend>
-                                <p> <label for="cep">Cep:</label></p>
-                                <p>
-                                    <input type="number" name="cep" id="icep" autocomplete="cc-number" required  placeholder="xxxxx-xxx">
-                                </p>
-                                <p><input type="button" id="SeachCep" value="Buscar Cep"></p>
-                                <p><label for="pais">País:</label></p>
-                                <p>
-                                   
-                                    <input type="text" name="pais" id="ipais">
-                                </p>
-                                <p><label for="estado">Estado:</label></p>
-                                <p>
-                                    
-                                    <input type="text" name="estado" id="iestado">
-                                </p>
-                                <p> <label for="cidade">Cidade:</label></p>
-                                <p>
-                                   
-                                    <input type="text" name="cidade" id="icidade">
-                                </p>
-                                <p>  <label for="bairro">Bairro:</label></p>
-                                <p>
-                                  
-                                    <input type="text" name="bairro" id="ibairro">
-                                </p>
-                                <p><label for="rua">Rua:</label></p>
-                                <p>
-                                    
-                                    <input type="text" name="rua" id="irua">
-                                </p>
-                                <p>
-                                    <label for="complemento">Complemento:</label>
-                                    <select name="complemento" id="icomplemento" required>
-                                        <option value="" disabled selected>Selecione um complemento</option>
-                                        <option value="Casa">Casa</option>
-                                        <option value="Apartamento">Apartamento</option>
-                                        <option value="Porão">Porão</option>
-                                        <option value="Cobertura">Cobertura</option>
-                                        <option value="Sótão">Sótão</option>
-                                        <option value="Kitnet">Kitnet</option>
-                                        <option value="Loft">Loft</option>
-                                        <option value="Duplex">Duplex</option>
-                                        <option value="Triplex">Triplex</option>
-                                        <option value="Estúdio">Estúdio</option>
-                                        <option value="Anexo">Anexo</option>
-                                        <option value="Vila">Vila</option>
-                                        <option value="Condomínio">Condomínio</option>
-                                    </select>
-                                </p>
-                                <p>
-                                    <label for="numero">Número:</label>
-                                    <input type="number" name="numero" id="numero">
-                                </p>
+            <aside class="MainLogin">
+                <form action="" method="post" autocomplete="on" id="Send">
+                    <fieldset id="person">
+                        <legend>Dados Pessoais</legend>
+                        <p><label for="iname">Nome Completo:</label></p>
+                        <p>
+                            <input type="text" name="name" id="iname" required placeholder="Nome Completo" autocomplete="cc-name">
+                        </p>
+                        <p><label for="idate">Data de Nascimento:</label></p>
+                        <p>
+                            <input type="date" name="birthdate" id="idate" required>
+                        </p>
+                        <p><label for="icpf">CPF:</label></p>
+                        <p>
+                            <input type="number" name="cpf" id="icpf" required placeholder="xxx-xxx-xxx.xx" autocomplete="cc-number">
+                        </p>
+                        <p>
+                            <fieldset id="Gender">
+                                <legend>Gênero</legend>
+                                <label for="Imasculine">Masculino</label>
+                                <input type="radio" name="Gender" id="Imasculine" value="Masculino">
+                                <label for="ifemenine">Feminino</label>
+                                <input type="radio" name="Gender" id="ifemenine" value="Feminino">
+                                <label for="Ianother">Outro</label>
+                                <input type="radio" name="Gender" id="Ianother" value="Outro">
                             </fieldset>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Informações de Login</legend>
-                            <p><label for="senha">Senha:</label></p>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informações do Contato</legend>
+                        <p><label for="Inumber">Número:</label></p>
+                        <p>
+                            <input type="tel" name="phone" id="Inumber" required placeholder="(xx) xxxxx-xxxx" autocomplete="tel">
+                        </p>
+                        <p><label for="Iemail">Email:</label></p>
+                        <p>
+                            <input type="email" name="email" id="Iemail" required placeholder="seu.email@dominio.com" autocomplete="email">
+                        </p>
+                        <fieldset id="address">
+                            <legend>Endereço</legend>
+                            <p><label for="icep">Cep:</label></p>
                             <p>
-                                
-                                <input type="password" id="senha" name="senha">
-                                <button type="button" id="toggleSenha">Mostrar</button>
+                                <input type="text" name="cep" id="icep" required placeholder="xxxxx-xxx" autocomplete="postal-code">
                             </p>
-                            <p> <label for="confirma_senha">Confirme a Senha:</label></p>
+                            <p><input type="button" id="SeachCep" value="Buscar Cep"></p>
+                            <p><label for="ipais">País:</label></p>
                             <p>
-                               
-                                <input type="password" id="confirma_senha" name="confirma_senha">
-                                <button type="button" id="toggleConfirmaSenha">Mostrar</button>
+                                <input type="text" name="country" id="ipais">
+                            </p>
+                            <p><label for="iestado">Estado:</label></p>
+                            <p>
+                                <input type="text" name="state" id="iestado">
+                            </p>
+                            <p><label for="icidade">Cidade:</label></p>
+                            <p>
+                                <input type="text" name="city" id="icidade">
+                            </p>
+                            <p><label for="ibairro">Bairro:</label></p>
+                            <p>
+                                <input type="text" name="neighborhood" id="ibairro">
+                            </p>
+                            <p><label for="irua">Rua:</label></p>
+                            <p>
+                                <input type="text" name="street" id="irua">
+                            </p>
+                            <p>
+                                <label for="icomplemento">Complemento:</label>
+                                <select name="complement" id="icomplemento" required>
+                                    <option value="" disabled selected>Selecione um complemento</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Apartamento">Apartamento</option>
+                                    <option value="Porão">Porão</option>
+                                    <option value="Cobertura">Cobertura</option>
+                                    <option value="Sótão">Sótão</option>
+                                    <option value="Kitnet">Kitnet</option>
+                                    <option value="Loft">Loft</option>
+                                    <option value="Duplex">Duplex</option>
+                                    <option value="Triplex">Triplex</option>
+                                    <option value="Estúdio">Estúdio</option>
+                                    <option value="Anexo">Anexo</option>
+                                    <option value="Vila">Vila</option>
+                                    <option value="Condomínio">Condomínio</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="numero">Número:</label>
+                                <input type="number" name="number" id="numero">
                             </p>
                         </fieldset>
-                       
-                    
-                  
-                </aside>
-           
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informações de Login</legend>
+                        <p><label for="senha">Senha:</label></p>
+                        <p class="password-container">
+                            <input type="password" id="senha" name="senha">
+                            <button type="button" id="toggleSenha">Mostrar</button>
+                        </p>
+                        <p><label for="confirma_senha">Confirme a Senha:</label></p>
+                        <p class="password-container">
+                            <input type="password" id="confirma_senha" name="confirma_senha">
+                            <button type="button" id="toggleConfirmaSenha">Mostrar</button>
+                        </p>
+                    </fieldset>
+                   
+                </form>
+            </aside>
         </main>
-   
-
-   <footer>
-    <fieldset>
-        <legend>Termo de uso</legend>
-       
-        <p>
-            <input type="submit" value="Registrar">
-        </p>
-        <p><input type="reset" id="registrar" value="Reset"></p>
-        <p class="footer">
-            <small>Ao se registrar neste site, você concorda com os 
-                <span>
-                    termos
-                </span>
-                 e <span>
-                políticas
-            </span> 
-                do Xampz
-            </small>
-             <input type="checkbox" name="" value="" required><small>Assinatura</small>
-        </p>
-       
-        <p id="login"><strong><a href="./Login.html">Já tem uma conta? Faça login</a></strong></p>
-    </fieldset>
-   </footer>
-</form>
-</div>
-    
+        <footer>
+            <fieldset>
+                <legend>Termo de uso</legend>
+                <p>
+                    <input type="submit" value="Registrar">
+                </p>
+                <p><input type="reset" id="registrar" value="Reset"></p>
+                <p class="footer">
+                    <small>Ao se registrar neste site, você concorda com os 
+                        <span>termos</span> e <span>políticas</span> do Xampz
+                    </small>
+                    <input type="checkbox" name="signature" value="" required><small>Assinatura</small>
+                </p>
+                <p id="login"><strong><a href="./Login.html">Já tem uma conta? Faça login</a></strong></p>
+            </fieldset>
+        </footer>
+    </div>
     <script src="../Js/Cadastro/ShowPassword.js"></script>
     <script src="../Js/Cadastro/SeachCep.js"></script>
     <script src="../Js/Cadastro/validate.js"></script>
