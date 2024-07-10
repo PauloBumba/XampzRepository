@@ -63,7 +63,7 @@ span {
 .MainLogin form input[type="tel"] {
     width: 95%;
     border: 2px solid var(--cor3);
-    height: 30px;
+    height: 40px;
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
@@ -73,7 +73,7 @@ span {
 .MainLogin form input[type="password"] {
     width: 70%;
     border: 2px solid var(--cor3);
-    height: 30px;
+    height: 40px;
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
@@ -100,14 +100,16 @@ button {
 }
 
 .password-container button {
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 8px 10px;
+    border-radius: 10px;
     background-color: var(--cor2);
     border: 2px solid var(--cor3);
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     color:black;
+    margin-left: -10px;
+    height: 40px;
 }
 
 .password-container button:hover {
@@ -132,6 +134,7 @@ select {
     border: 2px solid var(--cor3);
     font-weight: 600;
     background-color: var(--cor2);
+    height: 40px;
 }
 
 select:hover,
