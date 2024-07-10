@@ -55,9 +55,25 @@ span {
     color: #065716;
     font-weight: bolder;
 }
+.MainLogin form input[type="date"] {
+    width: 95%;
+    border: 2px solid var(--cor3);
+    height: 40px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: white; /* Melhorar contraste */
+    color: black;
+}
+
+.MainLogin form input[type="date"]::-webkit-calendar-picker-indicator {
+    background: black; /* Cor de fundo para o ícone de calendário no Chrome/Safari */
+    border-radius: 5px;
+}
 
 .MainLogin form input[type="text"],
-.MainLogin form input[type="date"],
+
 .MainLogin form input[type="number"],
 .MainLogin form input[type="email"],
 .MainLogin form input[type="tel"] {
