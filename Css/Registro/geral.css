@@ -63,12 +63,12 @@ span {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 5px;
-    background-color: white; /* Melhorar contraste */
+    background-color: white; 
     color: black;
 }
 
 .MainLogin form input[type="date"]::-webkit-calendar-picker-indicator {
-    background: black; /* Cor de fundo para o ícone de calendário no Chrome/Safari */
+    background: black; 
     border-radius: 5px;
 }
 

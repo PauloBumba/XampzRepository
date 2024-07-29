@@ -1,7 +1,7 @@
 @media screen and (min-width: 769px) 
 {
     :root 
-    
+
     {
         --cor1 :  #07980cd7;
         --cor2:rgba(18, 200, 236, 0.843);
@@ -20,7 +20,7 @@
 
     img 
     {
-        height: 40px;
+        height: 50px;
         margin-left: 40px;
     }
 
@@ -43,19 +43,20 @@
     }
     .form 
     {
-        width: 550px;
-        height: 250px;
+        width: 500px;
+        height: 260px;
     }
     
     nav a 
     {
-        background-image: linear-gradient(to bottom,var(--cor1),var(--cor2));
+       border: none;
         padding: 10px;
         color: white;
         border-radius: 5px;
-        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.551);
-        transform-origin: 0.5s;
+        
+        transition-duration: 0.5s;
         padding: 10px;
        
      }
+
 }
