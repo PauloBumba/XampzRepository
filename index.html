@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="shortcut icon" href="Assets/Images/logo-bw.png" type="image/x-icon">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="static/images/logo-bw.png" type="image/x-icon">
@@ -209,6 +211,10 @@
                 <button><a href="#btn-default" id="ver">Ver mais avaliações</a></button>
             </div>
         </section>
+        <section id="modalidades-grafico">
+            <h2 class="section-title">Distribuição das Modalidades</h2>
+            <canvas id="modalidadesPieChart" width="200" height="100"></canvas>
+        </section>
     </main>
       
     <footer>
@@ -223,9 +229,6 @@
     </footer>
 
     <script src="Js/Homepage/index.js"></script>
-
-          
-        
-    </script>
+   <script src="Js/Homepage/Charts.js"></script>
 </body>
 </html>
