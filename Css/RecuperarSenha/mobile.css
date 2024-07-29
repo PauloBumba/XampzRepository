@@ -62,6 +62,8 @@ footer
 {
     margin-top: 10px;
     width: 100%;
+    position: fixed;
+    bottom: o;
     background-image: linear-gradient(to bottom,var(--cor1),var(--cor2));
     display: flex;
     justify-content: space-between;

@@ -46,10 +46,10 @@ animacao.reveal('#home', {
     reset :true
 });
 animacao.reveal('.feedback', {
-    origin: 'rigth',
-    distance: '30%',
+    origin: 'bottom',
+    distance: '40%',
     duration:2000,
-    
+    delay:100,
     
     reset :true
 });

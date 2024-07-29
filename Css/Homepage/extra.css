@@ -211,7 +211,7 @@
         flex: 1 1 calc(100% / 4 - 20px);
         background-color: white;
         border-radius: 10px;
-        overflow-x: hidden;
+        overflow: hidden;
         
         margin: 20px;
         padding: 15px;

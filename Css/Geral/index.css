@@ -89,9 +89,11 @@ nav ul {
 /* Estilos gerais */
 #dishes {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: center;
-   
+    gap: 20px; /* Espaço entre os itens */
+    padding: 0;
+    margin: 0;
 }
 
 
