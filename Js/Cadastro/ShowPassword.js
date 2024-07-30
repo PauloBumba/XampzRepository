@@ -1,15 +1,15 @@
-$(document).ready(function () {
-    $('#toggleSenha').on('click', function () {
-        var $senhaInput = $('#senha');
-        var type = $senhaInput.attr('type') === 'password' ? 'text' : 'password';
-        $senhaInput.attr('type', type);
-        $(this).val(type === 'password' ? 'Mostrar' : 'Ocultar');
+$(document).ready(() => {
+    $("#toggleSenha").click(() => {
+        const passwordField = $("#senha");
+        const type = passwordField.attr("type") === "password" ? "text" : "password";
+        passwordField.attr("type", type);
+        $(this).text(type === "password" ? "Mostrar" : "Ocultar");
     });
 
-    $('#toggleConfirmaSenha').on('click', function () {
-        var $confirmaSenhaInput = $('#confirma_senha');
-        var type = $confirmaSenhaInput.attr('type') === 'password' ? 'text' : 'password';
-        $confirmaSenhaInput.attr('type', type);
-        $(this).val(type === 'password' ? 'Mostrar' : 'Ocultar');
+    $("#toggleConfirmaSenha").click(() => {
+        const confirmPasswordField = $("#confirma_senha");
+        const type = confirmPasswordField.attr("type") === "password" ? "text" : "password";
+        confirmPasswordField.attr("type", type);
+        $(this).text(type === "password" ? "Mostrar" : "Ocultar");
     });
-})
+});

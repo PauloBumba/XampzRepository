@@ -24,6 +24,8 @@ $(document).ready(function () {
             $(this).text("Selecionar Modalidade");
         }
     });
+   
+    
     
 });
 

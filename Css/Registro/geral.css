@@ -8,8 +8,8 @@
 }
 
 body, html {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
-    background-color: var(--cor5);
+    
+    background-color: var(--cor4);
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -25,6 +25,7 @@ div {
     margin: 0 auto;
     padding: 20px;
     background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312);
 }
 
 .HeaderLogin {
@@ -102,7 +103,7 @@ button {
     border-radius: 10px;
     margin-left: -5px;
     font-weight: 500;
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     color:black;
 }
 
@@ -119,7 +120,7 @@ button {
 .password-container button {
     padding: 8px 10px;
     border-radius: 10px;
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     border: 2px solid var(--cor3);
     font-weight: 500;
     cursor: pointer;
@@ -150,10 +151,15 @@ select {
     border-radius: 10px;
     border: 2px solid var(--cor3);
     font-weight: 600;
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     height: 40px;
-    color: black;
+   
 }
+
+select option:hover{
+    background-color: black;
+}
+
 input[type="date"]{
 color: black;
 }
@@ -176,7 +182,7 @@ input[type="button"] {
     margin-top: 10px;
     border-radius: 5px;
     font-weight: 600;
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     color:black;
     height: 40px;
 
@@ -210,7 +216,7 @@ input[type="reset"] {
     margin: 10px;
     border-radius: 5px;
     font-weight: 600;
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     color:black;
     height: 40px;
 }

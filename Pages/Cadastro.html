@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="../Assets/Images/logo-bw.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="../Css/Registro/geral.css">   
-    <link rel="stylesheet" href="../Css/Registro/ExtraScreem.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="../Css/Registro/geral.css">
+    <link rel="stylesheet" href="../Css/Registro/ExtraScreem.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    
+   
     <title>Registro</title>
 </head>
 <body>
@@ -32,7 +36,7 @@
                         </p>
                         <p><label for="icpf">CPF:</label></p>
                         <p>
-                            <input type="number" name="cpf" id="icpf" required placeholder="xxx-xxx-xxx.xx" autocomplete="cc-number">
+                            <input type="number" name="cpf" id="icpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"  title="CPF no formato XXX.XXX.XXX-XX ou sem formatação" placeholder="000.000.000-00" autocomplete="cc-number">
                         </p>
                         <p>
                             <fieldset id="Gender">
@@ -146,5 +150,27 @@
     <script src="../Js/Cadastro/ShowPassword.js"></script>
     <script src="../Js/Cadastro/SeachCep.js"></script>
     <script src="../Js/Cadastro/validate.js"></script>
+   
+    <script>
+       
+        
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
 </body>
 </html>

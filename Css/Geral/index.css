@@ -149,3 +149,19 @@ span{
     color: var(--cor1);
     
 }
+/* Adicionando o efeito pulse */
+.pulse {
+    animation: pulse-animation 1s ease-out;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
