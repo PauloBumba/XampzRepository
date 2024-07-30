@@ -37,6 +37,14 @@ animacao.reveal('.dish', {
     
     reset :true
 });
+animacao.reveal('#modalidadesPieChart', {
+    origin: 'left',
+    distance: '30%',
+    duration:2000,
+   
+    
+    reset :true
+});
 animacao.reveal('#home', {
     origin: 'left',
     distance: '30%',
@@ -53,4 +61,7 @@ animacao.reveal('.feedback', {
     
     reset :true
 });
+
+
+
 
