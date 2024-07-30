@@ -221,6 +221,7 @@
       
 
     }
+
     
     .dish-heart {
         position: absolute;
@@ -265,6 +266,18 @@
         font-weight: bolder;
         margin: 10px;
      }
+     #modalidadesPieChart {
+        width: 100%;
+        max-width: 100%; 
+        max-height: 450px; 
+        background-color: #f8f9fa; 
+        border: 2px solid #dee2e6;
+        border-radius: 10px;
+        display: block;
+        
+    }
+    
+    
     #testemunhos{
         display: flex;
         justify-content:space-between;
