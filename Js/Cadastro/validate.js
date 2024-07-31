@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     $("#Send").on('submit', function (event) {
@@ -8,9 +7,10 @@ $(document).ready(function () {
         var email = $("#Iemail").val();
         var password = $("#senha").val();
         var confirmPassword = $("#confirma_senha").val();
-        var cep = $("#cep").val(); // Adicionada definição para cep
+        var cep = $("#cep").val();
         var phone = $("#Inumber").val();
         var cpf = $("#icpf").val();
+        var number = $("#Inumber").val();
 
         // Validações
         if (!validateNome(nome)) return;
@@ -19,22 +19,27 @@ $(document).ready(function () {
         if (!validateConfirmPassword(password, confirmPassword)) return;
         if (!validatePhone(phone)) return;
         if (!validateCPF(cpf)) return;
+        if (!validateNumber(number)) return;
 
         // Se todas as validações passarem, exibir uma caixa de diálogo SweetAlert2
         Swal.fire({
-            title: 'Confirmação',
-            text: 'Deseja realmente enviar o formulário?',
+            title: 'Confirmação de Dados',
+            html: `<p><strong>Nome:</strong> ${nome}</p>
+                   <p><strong>Email:</strong> ${email}</p>
+                   <p><strong>CEP:</strong> ${cep}</p>
+                   <p><strong>Telefone:</strong> ${phone}</p>
+                   <p><strong>CPF:</strong> ${cpf}</p>`,
             icon: 'question',
             showCancelButton: true,
-            confirmButtonText: 'Sim',
-            cancelButtonText: 'Não'
+            confirmButtonText: 'Confirmar',
+            cancelButtonText: 'Cancelar'
         }).then((result) => {
             if (result.isConfirmed) {
                 toastr.success('Formulário enviado com sucesso!');
-                // Aqui você pode enviar o formulário, por exemplo, usando AJAX ou similar
-                // this.submit(); // Descomente se desejar enviar o formulário tradicionalmente
+                
             }
         });
+    
     });
 
     function validateNome(nome) {
@@ -77,9 +82,10 @@ $(document).ready(function () {
     }
 
     function validatePhone(phone) {
-        const re = /^\(\d{2}\) \d{4,5}-\d{4}$/; // Aceita formato (XX) XXXX-XXXX ou (XX) XXXXX-XXXX
+        // Verifica se o telefone tem apenas números e se tem 10 ou 11 dígitos
+        const re = /^\d{10,11}$/;
         if (!re.test(phone)) {
-            toastr.error('Por favor, insira um telefone válido no formato (XX) XXXX-XXXX ou (XX) XXXXX-XXXX.');
+            toastr.error('Por favor, insira um telefone válido com 10 ou 11 dígitos.');
             return false;
         }
         return true;
@@ -115,6 +121,16 @@ $(document).ready(function () {
             return false;
         }
 
+        return true;
+    }
+
+    function validateNumber(number) {
+        // Verifica se o número é válido (apenas dígitos)
+        const re = /^\d+$/;
+        if (!re.test(number)) {
+            toastr.error('Por favor, insira um número válido.');
+            return false;
+        }
         return true;
     }
 });

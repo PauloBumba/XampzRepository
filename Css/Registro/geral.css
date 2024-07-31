@@ -8,7 +8,6 @@
 }
 
 body, html {
-    
     background-color: var(--cor4);
     height: 100vh;
     width: 100vw;
@@ -19,7 +18,7 @@ img {
     width: 45%;
 }
 
-div {
+#page {
     max-width: 800px;
     min-width: 300px;
     margin: 0 auto;
@@ -56,6 +55,7 @@ span {
     color: #065716;
     font-weight: bolder;
 }
+
 .custom-date{
     width: 95%;
     border: 2px solid var(--cor3);
@@ -68,13 +68,9 @@ span {
     color: black;
 }
 
-.MainLogin form input[type="date"]::-webkit-calendar-picker-indicator {
-    background: black; 
-    border-radius: 5px;
-}
+
 
 .MainLogin form input[type="text"],
-
 .MainLogin form input[type="number"],
 .MainLogin form input[type="email"],
 .MainLogin form input[type="tel"] {
@@ -117,18 +113,6 @@ button {
     flex: 1;
 }
 
-.password-container button {
-    padding: 8px 10px;
-    border-radius: 10px;
-    background-color: var(--cor1);
-    border: 2px solid var(--cor3);
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    color:black;
-    margin-left: -10px;
-    height: 40px;
-}
 
 .password-container button:hover {
     background-color: var(--cor1);
@@ -153,16 +137,16 @@ select {
     font-weight: 600;
     background-color: var(--cor1);
     height: 40px;
-   
 }
 
-select option:hover{
+select option:hover {
     background-color: black;
 }
 
-input[type="date"]{
-color: black;
+input[type="date"] {
+    color: black;
 }
+
 select:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
@@ -185,7 +169,6 @@ input[type="button"] {
     background-color: var(--cor1);
     color:black;
     height: 40px;
-
 }
 
 footer {
