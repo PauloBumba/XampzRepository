@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise e Estatísticas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="top">
+      <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+      <nav id="menu">
+        <ul>
+          <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"> login</i></a></li>
+          <li><a href="registro.html"><i class="fa fa-registered" aria-hidden="true"> Registra-te</i></a></li>
+        </ul>
+      </nav>
+      <i class="fa fa-bars" id="burger"></i>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Análise e Estatísticas</h1>
+    <section class="statistics">
+      <h2>Estatísticas Gerais</h2>
+      <canvas id="generalStatisticsChart"></canvas>
+    </section>
+    <section class="player-performance">
+      <h2>Desempenho dos Jogadores</h2>
+      <canvas id="playerPerformanceChart"></canvas>
+    </section>
+    <section class="popular-modalities">
+      <h2>Modalidades Populares</h2>
+      <canvas id="popularModalitiesChart"></canvas>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div id="copy">&copy; XampZ 2024</div>
+      <div class="footer-link">
+        <ul>
+            <a href="sobre.html">Sobre</a>
+            <a href="termos.html">Termos</a>
+            <a href="suporte-contato.html">Suporte</a>
+        </ul>
+    </div>
+    </div>
+    <div id="footer_itens">
+      
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+  
+  <script>
+    // Dados para os gráficos
+    const generalStatisticsData = {
+      labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+      datasets: [{
+        label: 'Número de Jogos',
+        data: [50, 60, 70, 90, 100, 110],
+        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)'
+      }]
+    };
+
+    const playerPerformanceData = {
+      labels: ['Jogador 1', 'Jogador 2', 'Jogador 3', 'Jogador 4', 'Jogador 5'],
+      datasets: [{
+        label: 'Pontuação Média',
+        data: [85, 90, 78, 92, 88],
+        borderColor: 'rgba(153, 102, 255, 1)',
+        backgroundColor: 'rgba(153, 102, 255, 0.2)'
+      }]
+    };
+
+    const popularModalitiesData = {
+      labels: ['Futebol', 'Basquete', 'Vôlei', 'Truco', 'Xadrez'],
+      datasets: [{
+        label: 'Participantes',
+        data: [200, 150, 120, 80, 60],
+        borderColor: 'rgba(255, 159, 64, 1)',
+        backgroundColor: 'rgba(255, 159, 64, 0.2)'
+      }]
+    };
+
+    // Configuração dos gráficos
+    const configGeneralStatistics = {
+      type: 'line',
+      data: generalStatisticsData,
+    };
+
+    const configPlayerPerformance = {
+      type: 'bar',
+      data: playerPerformanceData,
+    };
+
+    const configPopularModalities = {
+      type: 'pie',
+      data: popularModalitiesData,
+    };
+
+    // Renderização dos gráficos
+    const generalStatisticsChart = new Chart(
+      document.getElementById('generalStatisticsChart'),
+      configGeneralStatistics
+    );
+
+    const playerPerformanceChart = new Chart(
+      document.getElementById('playerPerformanceChart'),
+      configPlayerPerformance
+    );
+
+    const popularModalitiesChart = new Chart(
+      document.getElementById('popularModalitiesChart'),
+      configPopularModalities
+    );
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte e Contato</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="top">
+      <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+      <nav id="menu">
+        <ul>
+          <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"> login</i></a></li>
+          <li><a href="registro.html"><i class="fa fa-registered" aria-hidden="true"> Registra-te</i></a></li>
+        </ul>
+      </nav>
+      <i class="fa fa-bars" id="burger"></i>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Suporte e Contato</h1>
+    <section class="support">
+      <h2>Precisa de Ajuda?</h2>
+      <p>Entre em contato conosco através do formulário abaixo.</p>
+      <form action="submit_contact.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section class="faq">
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-item">
+        <h3>Como posso recuperar minha senha?</h3>
+        <p>Você pode recuperar sua senha clicando em "Esqueci minha senha" na página de login.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Como posso alterar meu endereço de email?</h3>
+        <p>Vá para a página de perfil e atualize seu endereço de email na seção de configurações.</p>
+      </div>
+      <!-- Adicione mais FAQs conforme necessário -->
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div id="copy">&copy; XampZ 2024</div>
+      <div class="footer-link">
+        <ul>
+            <a href="sobre.html">Sobre</a>
+            <a href="termos.html">Termos</a>
+            <a href="suporte-contato.html">Suporte</a>
+        </ul>
+    </div>
+    </div>
+    <div id="footer_itens">
+      
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+  
+</body>
+</html>

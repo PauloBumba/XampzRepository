@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modalidades e Regras</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #24292e;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+
+    .header .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .container h1 {
+      margin: 0;
+    }
+
+    .header .container select {
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    .modalities {
+      width: 80%;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .modalities h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .modality-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .modality-list li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .modality-list li:last-child {
+      border-bottom: none;
+    }
+
+    .modality-list a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .modality-list a:hover {
+      text-decoration: underline;
+    }
+
+    .modality-details {
+      margin-top: 20px;
+    }
+
+    .modality-details img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .modality-details h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .modality-details p {
+      margin: 10px 0;
+    }
+
+    .modality-details ul {
+      list-style-type: disc;
+      margin: 10px 0 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="top">
+        <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+       
+        <nav id="menu">
+            <ul>
+                <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"> login</i></a></li>
+                <li><a href="registro.html"><i class="fa fa-registered" aria-hidden="true"> Registra-te</i></a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="burger"></i>
+
+    </div>
+  </header>
+  <main class="container">
+    <section class="modalities">
+      <h1 id="modalities-title">Modalidades e Regras</h1>
+      <ul class="modality-list">
+        <li><a href="#football" id="football-link">Futebol</a></li>
+        <li><a href="#basketball" id="basketball-link">Basquetebol</a></li>
+        <li><a href="#handball" id="handball-link">Andebol</a></li>
+        <li><a href="#truco" id="truco-link">Truco</a></li>
+        <li><a href="#esports" id="esports-link">Esports</a></li>
+        <li><a href="#chess" id="chess-link">Xadrez</a></li>
+      </ul>
+
+      <div id="football" class="modality-details">
+        <img src="../Assets/Images/card-futebol.jpg" alt="Futebol">
+        <h2 id="football-title">Futebol</h2>
+        <p id="football-description">O futebol é um esporte coletivo onde duas equipes competem para marcar gols, chutando uma bola dentro da meta adversária.</p>
+        <h3 id="football-rules-title">Regras Principais:</h3>
+        <ul id="football-rules">
+          <li>Cada equipe tem onze jogadores em campo.</li>
+          <li>O jogo é dividido em dois tempos de 45 minutos.</li>
+          <li>Não é permitido usar as mãos, exceto pelo goleiro.</li>
+        </ul>
+      </div>
+
+      <div id="basketball" class="modality-details">
+        <img src="../Assets/Images/card-basquete.jpg" alt="Basquetebol">
+        <h2 id="basketball-title">Basquetebol</h2>
+        <p id="basketball-description">O basquetebol é um esporte coletivo onde duas equipes competem para marcar pontos, lançando uma bola através de um aro suspenso.</p>
+        <h3 id="basketball-rules-title">Regras Principais:</h3>
+        <ul id="basketball-rules">
+          <li>Cada equipe tem cinco jogadores em campo.</li>
+          <li>Os pontos são marcados ao fazer a bola passar pelo aro.</li>
+          <li>O jogo é dividido em quatro períodos.</li>
+        </ul>
+      </div>
+
+      <div id="handball" class="modality-details">
+        <img src="../Assets/Images/Andebal.png" alt="Andebol">
+        <h2 id="handball-title">Andebol</h2>
+        <p id="handball-description">O andebol é um esporte coletivo onde duas equipes competem para marcar gols, lançando uma bola dentro da meta adversária com as mãos.</p>
+        <h3 id="handball-rules-title">Regras Principais:</h3>
+        <ul id="handball-rules">
+          <li>Cada equipe tem sete jogadores em campo.</li>
+          <li>O jogo é dividido em dois tempos de 30 minutos.</li>
+          <li>Os jogadores não podem dar mais de três passos sem driblar a bola.</li>
+        </ul>
+      </div>
+
+      <div id="truco" class="modality-details">
+        <img src="../Assets/Images/Truco.png" alt="Truco">
+        <h2 id="truco-title">Truco</h2>
+        <p id="truco-description">O truco é um jogo de cartas popular no Brasil e Argentina, jogado em duplas ou individualmente.</p>
+        <h3 id="truco-rules-title">Regras Principais:</h3>
+        <ul id="truco-rules">
+          <li>O jogo é jogado com um baralho de 40 cartas.</li>
+          <li>Os jogadores precisam acumular pontos por meio de rodadas.</li>
+          <li>Vence a equipe que alcançar o número de pontos estabelecido.</li>
+        </ul>
+      </div>
+
+      <div id="esports" class="modality-details">
+        <img src="../Assets/Images/card-egames.jpg" alt="Esports">
+        <h2 id="esports-title">Esports</h2>
+        <p id="esports-description">Os esports referem-se a competições de jogos eletrônicos, onde jogadores ou equipes competem em diferentes jogos digitais.</p>
+        <h3 id="esports-rules-title">Regras Principais:</h3>
+        <ul id="esports-rules">
+          <li>As regras variam conforme o jogo eletrônico.</li>
+          <li>Os torneios podem ser individuais ou em equipe.</li>
+          <li>As competições seguem o formato e as regras específicas de cada jogo.</li>
+        </ul>
+      </div>
+
+      <div id="chess" class="modality-details">
+        <img src="../Assets/Images/Truco.png" alt="Xadrez">
+        <h2 id="chess-title">Xadrez</h2>
+        <p id="chess-description">Xadrez é um jogo de tabuleiro estratégico para dois jogadores, onde o objetivo é capturar o rei adversário.</p>
+        <h3 id="chess-rules-title">Regras Principais:</h3>
+        <ul id="chess-rules">
+          <li>O jogo é jogado em um tabuleiro de 64 casas.</li>
+          <li>Cada jogador controla 16 peças com movimentos distintos.</li>
+          <li>O objetivo é dar xeque-mate no rei adversário.</li>
+        </ul>
+      </div>
+
+      <!-- Adicione mais seções conforme necessário -->
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div id="copy">&copy; XampZ 2024</div>
+      <div class="footer-link">
+        <ul>
+            <a href="sobre.html">Sobre</a>
+            <a href="termos.html">Termos</a>
+            <a href="suporte-contato.html">Suporte</a>
+        </ul>
+    </div>
+    </div>
+    <div id="footer_itens">
+      
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

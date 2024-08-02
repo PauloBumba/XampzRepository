@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Adicione os estilos existentes aqui */
+    
+    .tournaments {
+      margin-top: 20px;
+    }
+
+    .tournaments table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .tournaments table, .tournaments th, .tournaments td {
+      border: 1px solid #ddd;
+    }
+
+    .tournaments th, .tournaments td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .tournaments th {
+      background-color: #f4f4f4;
+    }
+
+    .tournaments td {
+      color: #555;
+    }
+
+    .tournaments a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .tournaments a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Perfil do Usuário</h1>
+      <!-- Adicione links para outras páginas se necessário -->
+    </div>
+  </header>
+  <main class="container">
+    <section class="profile">
+      <div class="profile-header">
+        <img id="profilePicture" src="default-profile.jpg" alt="Foto do perfil" class="profile-picture">
+        <div class="profile-info">
+          <h2 id="username">Nome do Usuário</h2>
+          <p id="email">email@exemplo.com</p>
+          <p id="bio">Biografia do usuário. Pode incluir informações sobre hobbies, interesses, etc.</p>
+          <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)">
+          <button onclick="editProfile()">Editar Perfil</button>
+        </div>
+      </div>
+
+      <section class="statistics">
+        <h3>Estatísticas de Participação</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Projetos Concluídos</td>
+              <td id="completed-projects">15</td>
+            </tr>
+            <tr>
+              <td>Comentários Postados</td>
+              <td id="comments-posted">32</td>
+            </tr>
+            <tr>
+              <td>Horas de Atividade</td>
+              <td id="activity-hours">120</td>
+            </tr>
+            <tr>
+              <td>Pull Requests</td>
+              <td id="pull-requests">8</td>
+            </tr>
+            <tr>
+              <td>Issues Resolvidas</td>
+              <td id="issues-resolved">5</td>
+            </tr>
+          </tbody>
+        </table>
+        <canvas id="participationChart" width="400" height="200"></canvas>
+      </section>
+
+      <section class="tournaments">
+        <h3>Torneios Participados</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome do Torneio</th>
+              <th>Data</th>
+              <th>Resultado</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="tournament-list">
+            <!-- Exemplo de dados; será preenchido dinamicamente -->
+            <tr>
+              <td>Torneio de Exemplo 1</td>
+              <td>01/01/2024</td>
+              <td>Vencedor</td>
+              <td><a href="link-para-o-torneio-1" target="_blank">Detalhes</a></td>
+            </tr>
+            <tr>
+              <td>Torneio de Exemplo 2</td>
+              <td>15/02/2024</td>
+              <td>Participante</td>
+              <td><a href="link-para-o-torneio-2" target="_blank">Detalhes</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div id="copy">&copy; XampZ 2024</div>
+      <div class="footer-link">
+        <ul>
+            <a href="sobre.html">Sobre</a>
+            <a href="termos.html">Termos</a>
+            <a href="suporte-contato.html">Suporte</a>
+        </ul>
+    </div>
+    </div>
+    <div id="footer_itens">
+      
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+  
+  <script>
+    function editProfile() {
+      alert('Função de edição de perfil não implementada.');
+    }
+
+    function previewImage(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById('profilePicture').src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // Simulação de dados para estatísticas
+    const userStats = {
+      completedProjects: 15,
+      commentsPosted: 32,
+      activityHours: 120,
+      pullRequests: 8,
+      issuesResolved: 5
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Preencher a tabela com dados
+      document.getElementById('completed-projects').innerText = userStats.completedProjects;
+      document.getElementById('comments-posted').innerText = userStats.commentsPosted;
+      document.getElementById('activity-hours').innerText = userStats.activityHours;
+      document.getElementById('pull-requests').innerText = userStats.pullRequests;
+      document.getElementById('issues-resolved').innerText = userStats.issuesResolved;
+
+      // Configurar o gráfico
+      const ctx = document.getElementById('participationChart').getContext('2d');
+      const participationChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Projetos Concluídos', 'Comentários Postados', 'Horas de Atividade', 'Pull Requests', 'Issues Resolvidas'],
+          datasets: [{
+            label: 'Participação do Usuário',
+            data: [
+              userStats.completedProjects,
+              userStats.commentsPosted,
+              userStats.activityHours,
+              userStats.pullRequests,
+              userStats.issuesResolved
+            ],
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+
+      // Exemplo de preenchimento da lista de torneios com links
+      const tournaments = [
+        { name: 'Torneio de Exemplo 1', date: '01/01/2024', result: 'Vencedor', link: 'link-para-o-torneio-1' },
+        { name: 'Torneio de Exemplo 2', date: '15/02/2024', result: 'Participante', link: 'link-para-o-torneio-2' }
+      ];
+
+      const tournamentList = document.getElementById('tournament-list');
+      tournaments.forEach(tournament => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${tournament.name}</td>
+          <td>${tournament.date}</td>
+          <td>${tournament.result}</td>
+          <td><a href="${tournament.link}" target="_blank">Detalhes</a></td>
+        `;
+        tournamentList.appendChild(row);
+      });
+    });
+  </script>
+</body>
+</html>
