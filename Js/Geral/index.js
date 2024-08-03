@@ -1,12 +1,16 @@
 
-$(document).ready(function () {
+$(document).ready(function () 
+{
    
-    $(window).resize(function (){
-        if($(window).innerWidth()>=769){
+    $(window).resize(function ()
+    {
+        if($(window).innerWidth()>=769)
+        {
             $("#menu").show();
 
         }
-        else{
+        else
+        {
             $("#menu").hide();
 
         }
