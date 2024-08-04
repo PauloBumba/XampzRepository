@@ -51,18 +51,22 @@ body {
     padding: 0;
   }
 
-  .modality-list li {
+  .modality-list li 
+  {
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    
   }
 
-  .modality-list li:last-child {
+  .modality-list li:last-child 
+  {
     border-bottom: none;
   }
 
   .modality-list a {
     text-decoration: none;
     color: #007bff;
+    font-weight: 600;
   }
 
   .modality-list a:hover {
@@ -82,9 +86,13 @@ body {
   }
 
   .modality-details h2 {
-    margin: 0;
-    font-size: 20px;
-    color: #333;
+    padding-left: 15px;
+    margin-left: -20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color:black;
+    background-image: linear-gradient(to right ,  var(--cor1), transparent);
   }
 
   .modality-details p {
@@ -97,6 +105,4 @@ body {
     margin: 10px 0 10px 20px;
     color: #555;
   }
-  .container{
-   
-  }
+ 

@@ -76,6 +76,11 @@ footer
     
     
 }
+#menu i
+{
+    color: white;
+    padding: 5px;
+}
 #copy
 {
     color:white;
@@ -96,25 +101,7 @@ footer
     transition-duration: 0.5s;
     transform: translate(-10px,-10px);
 }
-.footer-link
-{
-    display: flex;
-    flex-direction: row;
-   
-    a{
-        
-        text-decoration: none;
-        text-align: justify;
-        color: white;
-        padding: 10px;
-        font-weight: 600;
-        text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.411);
-
-
-    }
  
-
-} 
 nav a:hover {
     transform: translate(-1PX, -10px);
     transition-duration: 0.7s;
@@ -128,32 +115,54 @@ nav a:hover {
     {
         display: none;
     }
-    
+    .footer-link >a
+    {
+        display: flex;
+        flex-flow: column wrap;
+         justify-content: left;
+         color: aliceblue;
+         text-decoration: none;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.501);
+   
+    }
 }
 @media screen and (min-width:991.99px) {
-    #burger {
+    #burger 
+    {
         display: none;
     }
 
-    header {
+    header
+    {
         padding-top: 15px;
     }
 
-    nav li{
+    nav li
+    {
         display: inline-block;
         text-decoration: none;
         margin: 10px;
     }
-    nav li a{
+    nav li a
+    {
         text-decoration: none;
         color: white;
         font-weight:600 ;
         text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.411);
 
     }
-    #menu i{
+    .footer-link a
+    {
+        text-decoration: none;
+        padding: 10px;
+        padding-top: 10px;
+        margin-top: 5px;
         color: white;
+        font-weight: 600;
+        text-shadow: 1px 0px 1px black;
     }
+   
    
 }
 
