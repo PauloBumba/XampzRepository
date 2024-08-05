@@ -25,9 +25,13 @@ h1
     font-size: 18px;
     color:black;
    
+    padding: 10px;
     
 }
-  p 
+.container h2:nth-of-type(1) {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+  }
+p 
 {
     margin: 10px ;
     

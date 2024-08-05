@@ -93,7 +93,9 @@ body {
     font-size: 22px;
     color:black;
     background-image: linear-gradient(to right ,  var(--cor1), transparent);
+  padding: 10px;
   }
+
 
   .modality-details p {
     margin: 10px 0;
