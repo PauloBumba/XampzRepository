@@ -5,134 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Inicial - Perfil do Usuário</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #f4f4f4;
-    }
-    .header {
-      background-color: #007BFF;
-      color: #fff;
-      padding: 15px 0;
-      text-align: center;
-    }
-    .header a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .header a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      width: 90%;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
-    .welcome {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-    .welcome img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      margin-bottom: 15px;
-    }
-    .welcome h1 {
-      margin: 0 0 10px;
-      color: #333;
-    }
-    .welcome p {
-      font-size: 1.2em;
-      color: #666;
-    }
-    .links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 30px;
-    }
-    .links a {
-      display: inline-block;
-      padding: 15px 25px;
-      background-color: #28a745;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: background-color 0.3s;
-    }
-    .links a:hover {
-      background-color: #218838;
-    }
-    .features, .news, .feedback, .events {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-    .features div, .news div, .feedback div, .events div {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 30%;
-      margin: 10px 0;
-    }
-    .features i, .news i, .feedback i, .events i {
-      font-size: 3em;
-      color: #007BFF;
-    }
-    .features h3, .news h3, .feedback h3, .events h3 {
-      margin-top: 10px;
-      color: #333;
-    }
-    .features p, .news p, .feedback p, .events p {
-      color: #666;
-    }
-    .feedback form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .feedback input, .feedback textarea {
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      width: 100%;
-    }
-    .feedback button {
-      padding: 10px;
-      background-color: #007BFF;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-    .feedback button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" href="../Css/Geral/index.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+   
 </head>
 <body>
-  <header class="header">
-    <a href="index.html">Home</a>
-    <a href="profile.html">Perfil</a>
-    <a href="tournaments.html">Torneios</a>
-    <a href="contact.html">Contato</a>
+  <header class="header-container">
+    <div class="header-son">
+        
+          <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+          
+        
+        <nav id="menu">
+            <ul >
+                <li>
+                  <i class="fa-solid fa-house"></i><a href="Home.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-user"></i><a href="profile.html">Perfil</a>
+                </li>
+                <li><i class="fa-solid fa-calendar"></i><a href="calendario.html">Calendário</a>
+                </li>
+                <li>
+<i class="fa-solid fa-square-poll-vertical"></i><a href="Historic.html">Historico</a>
+                </li>
+                <li id="analise">
+                  <a href="analise-estatisticas.html">Analise</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="burger"></i>
+    </div>
   </header>
   <main class="container">
     <section class="welcome">
@@ -178,16 +82,7 @@
       </div>
     </section>
 
-    <section class="feedback">
-      <h3>Deixe seu Feedback</h3>
-      <form action="submit_feedback.html" method="post">
-        <input type="text" name="name" placeholder="Seu Nome" required>
-        <input type="email" name="email" placeholder="Seu Email" required>
-        <textarea name="message" rows="4" placeholder="Sua Mensagem" required></textarea>
-        <button type="submit">Enviar Feedback</button>
-      </form>
-    </section>
-
+    
     <section class="events">
       <div>
         <i class="fas fa-calendar-week"></i>
@@ -202,13 +97,14 @@
     </section>
   </main>
   <footer>
-    <div>
+    <div >
       <div id="copy">&copy; XampZ 2024</div>
-      <div class="footer-link">
-        <ul>
+      <div >
+        <ul class="footer-link">
             <a href="sobre.html">Sobre</a>
             <a href="termos.html">Termos</a>
             <a href="suporte-contato.html">Suporte</a>
+            <a href="feedback-avaliacoes.html">Avaliações</a>
         </ul>
     </div>
     </div>
@@ -219,5 +115,6 @@
       <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </footer>
+  <script src="../Js/Geral/index.js"></script>
 </body>
 </html>

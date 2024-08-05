@@ -4,23 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="../Css/Geral/index.css">
+  <link rel="stylesheet" href="../Css/Sobre/geral.css">
+  <link rel="stylesheet" href="../Css/Sobre/mobile.css">
+  <link rel="stylesheet" href="../Css/Sobre/extraScreen.css">
+ 
 </head>
 
 <body>
-  <header class="header">
-    <div class="top">
-      <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+  <header class="header-container">
+    <div class="header-son">
+      <img src="../Assets/Images/logo-bw.png" alt="Logomarca XampZ">
       <nav id="menu">
         <ul>
-          <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"> login</i></a></li>
-          <li><a href="registro.html"><i class="fa fa-registered" aria-hidden="true"> Registra-te</i></a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="termos.html">Termos</a></li>
-          <li><a href="suporte-contato.html">Suporte</a></li>
+          <li>
+            <i class="fa-solid fa-house"></i><a href="Home.html">Home</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i><a href="profile.html">Perfil</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-calendar"></i><a href="calendario.html">Calendário</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-square-poll-vertical"></i><a href="Historic.html">Histórico</a>
+          </li>
+          <li id="analise">
+            <i class="fa-solid fa-chart-line"></i><a href="analise-estatisticas.html">Análise</a>
+          </li>
         </ul>
       </nav>
-      <i class="fa fa-bars" id="burger"></i>
+      <i class="fa-solid fa-bars" id="burger"></i>
     </div>
   </header>
   <main class="container">
@@ -32,37 +50,70 @@
     <section class="team">
       <h2>Nosso Time</h2>
       <p>Conheça a equipe por trás do XampZ:</p>
-      <section class="team">
-        <h2>Nosso Time</h2>
-        <p>Conheça a equipe por trás do XampZ:</p>
-        <ul>
-          <li>
-            <img src="images/fabiano-wonzoski.jpg" alt="Fabiano Wonzoski">
-            <strong>Fabiano Wonzoski</strong> - Fundador e CEO
-          </li>
-          <li>
-            <img src="images/mauricio-roberto-gonzatto.jpg" alt="Mauricio Roberto Gonzatto">
-            <strong>Mauricio Roberto Gonzatto</strong> - Diretor de Tecnologia
-          </li>
-          <li>
-            <img src="images/leandro-cordova.jpg" alt="Leandro Cordova">
-            <strong>Leandro Cordova</strong> - Desenvolvedor Front-End
-          </li>
-          <li>
-            <img src="images/aguinaldo-munlode.jpg" alt="Aguinaldo Munlode">
-            <strong>Aguinaldo Munlode</strong> - Desenvolvedor Back-End
-          </li>
-          <li>
-            <img src="images/paulo-bumba.jpg" alt="Paulo Bumba">
-            <strong>Paulo Bumba</strong> - Designer
-          </li>
-          <li>
-            <img src="images/alex-oneda.jpg" alt="Alex Oneda">
-            <strong>Alex Oneda</strong> - Gerente de Produto
-          </li>
-        </ul>
-      </section>
-      
+      <ul class="box">
+        <li>
+          <img src="images/fabiano-wonzoski.jpg" alt="Fabiano Wonzoski, Fundador e CEO">
+          <strong>Fabiano Wonzoski</strong> - Fundador e CEO
+        </li>
+        <li>
+          <img src="images/mauricio-roberto-gonzatto.jpg" alt="Mauricio Roberto Gonzatto, Gerente de Projeto">
+          <strong>Mauricio Roberto Gonzatto</strong> - Gerente de Projeto
+        </li>
+        <li>
+          <img src="images/leandro-cordova.jpg" alt="Leandro Cordova, Desenvolvedor Front-End">
+          <strong>Leandro Cordova</strong> - Desenvolvedor Front-End
+        </li>
+        <li>
+          <img src="images/aguinaldo-munlode.jpg" alt="Aguinaldo Munlode, Desenvolvedor Back-End">
+          <strong>Aguinaldo Munlode</strong> - Desenvolvedor Back-End
+        </li>
+        <li>
+          <img src="../Assets/Images/278859998_164937585955342_7502639427951643987_n.jpg" alt="Paulo Bumba, Dev Front-End">
+          <strong>Paulo Bumba</strong> - Desenvolvedor Front-End
+        </li>
+        <li>
+          <img src="images/alex-oneda.jpg" alt="Alex Oneda, Gerente de Produto">
+          <strong>Alex Oneda</strong> - Desenvolvedor Front-End
+        </li>
+      </ul>
+    </section>
+    <section class="technologies">
+      <h2>Tecnologias Usadas</h2>
+      <ul>
+        <li>
+          <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5">
+          HTML5
+        </li>
+        <li>
+          <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3">
+          CSS3
+        </li>
+        <li>
+          <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
+          JavaScript
+        </li>
+        <li>
+          <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png" alt="jQuery">
+          jQuery
+        </li>
+       
+        <li>
+          <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL">
+          MySQL
+        </li>
+        <li>
+          <img src="https://img.icons8.com/color/48/000000/net-framework.png" alt=".NET">
+          .NET
+        </li>
+        <li>
+          <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="C#">
+          C#
+        </li>
+        <li>
+          <img src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap">
+          Bootstrap
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
@@ -70,18 +121,18 @@
       <div id="copy">&copy; XampZ 2024</div>
       <div class="footer-link">
         <ul>
-            <a href="sobre.html">Sobre</a>
-            <a href="termos.html">Termos</a>
-            <a href="suporte-contato.html">Suporte</a>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="termos.html">Termos</a></li>
+          <li><a href="suporte-contato.html">Suporte</a></li>
         </ul>
-    </div>
+      </div>
     </div>
     <div id="footer_itens">
-      
       <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
       <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </footer>
+  <script src="../Js/Geral/index.js"></script>
 </body>
 </html>

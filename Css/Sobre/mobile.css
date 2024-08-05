@@ -1,0 +1,27 @@
+@media screen and (max-width: 992px)
+{
+
+    .team ul li {
+        padding: 10px;
+        margin-top: 10px;
+        border: 2px solid var(--cor3);
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .team ul li img {
+        max-width: 70%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+     
+    
+    
+
+}

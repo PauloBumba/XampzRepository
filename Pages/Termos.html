@@ -4,19 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Termos de Uso</title>
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="../Assets/Images/logo-bw.png" type="image/x-icon">
+  <link rel="stylesheet" href="../Css/Geral/index.css">
+  <link rel="stylesheet" href="../Css/Termo/mobile.css">
+  <link rel="stylesheet" href="../Css/Termo/geral.css">
 </head>
 <body>
-  <header class="header">
-    <div class="top">
-      <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
-      <nav id="menu">
-        <ul>
-          <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"> login</i></a></li>
-          <li><a href="registro.html"><i class="fa fa-registered" aria-hidden="true"> Registra-te</i></a></li>
-        </ul>
-      </nav>
-      <i class="fa fa-bars" id="burger"></i>
+  <header class="header-container">
+    <div class="header-son">
+        
+          <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+          
+        
+        <nav id="menu">
+            <ul >
+                <li>
+                  <i class="fa-solid fa-house"></i><a href="Home.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-user"></i><a href="profile.html">Perfil</a>
+                </li>
+                <li><i class="fa-solid fa-calendar"></i><a href="calendario.html">Calendário</a>
+                </li>
+                <li>
+<i class="fa-solid fa-square-poll-vertical"></i><a href="Historic.html">Historico</a>
+                </li>
+                <li id="analise">
+                  <a href="analise-estatisticas.html">Analise</a>
+                </li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="burger"></i>
     </div>
   </header>
   <main class="container">
@@ -29,11 +51,11 @@
       <h2>3. Conteúdo do Usuário</h2>
       <p>Você é responsável pelo conteúdo que publica. Não toleramos conteúdo ofensivo, ilegal ou que viole direitos de terceiros.</p>
       <h2>4. Privacidade</h2>
-      <p>Respeitamos sua privacidade. Veja nossa <a href="privacidade.html">Política de Privacidade</a> para mais detalhes.</p>
+      <p>Respeitamos sua privacidade. Veja nossa <strong><a href="privacidade.html">Política de Privacidade</a> </strong>para mais detalhes.</p>
       <h2>5. Alterações nos Termos</h2>
       <p>Podemos alterar estes termos a qualquer momento. Notificaremos sobre mudanças significativas em nosso site.</p>
       <h2>6. Contato</h2>
-      <p>Para dúvidas, entre em contato conosco através da nossa página de <a href="suporte-contato.html">Suporte</a>.</p>
+      <p>Para dúvidas, entre em contato conosco através da nossa página de <strong><a href="suporte-contato.html">Suporte</a></strong>.</p>
     </section>
   </main>
   <footer>
@@ -54,5 +76,6 @@
       <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </footer>
+  <script src="../Js/Geral/index.js"></script>
 </body>
 </html>

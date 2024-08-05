@@ -55,7 +55,9 @@ html {
 
 
 }
-
+ul{
+    list-style-type: none;
+}
 header {
     min-height: 120px;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
