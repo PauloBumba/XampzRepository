@@ -1,0 +1,135 @@
+@charset "utf-8";
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star-rating input:checked ~ label {
+    color: var(--cor1);
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label:hover,
+.star-rating input:checked ~ label:hover ~ label {
+    color: var(--cor5);
+}
+
+.user-rating {
+    color: var(--cor1);
+}
+.container
+{
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.448);
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+h1 
+{
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+h2 
+{
+    padding-left: 15px;
+    margin: 10px 10px;
+    font-size: 18px;
+    color:black;
+    padding: 10px; 
+}
+.reviews h2
+{
+    text-align: center;
+}
+
+.container
+{
+    width: 80%;
+}
+#email, #name{
+    height: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+   
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin:  auto;
+    border: 2px solid var(--cor3);
+}
+#avalition{
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    
+}
+#commit{
+    margin-bottom: 10px;
+    padding: 15px;
+}
+#comments{
+    margin-top: 10px;
+    width: 80%;
+    border: 2px solid var(--cor3);
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+}
+input[type="submit"]{
+   
+    width: 90%;
+    background-color: var(--cor1);
+    font-weight: 600;
+    height: 30px;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+
+
+}
+input[type="submit"]:hover{
+    transition-duration: 1s;
+    transform: translate(-1px,-10px);
+}
+.review
+{
+    margin-top: 10px;
+    border: 2px solid var(--cor3);
+    border-radius: 5px;
+    padding: 10px;
+}
+.review h3 ,p
+{
+    margin-top: 10px;
+}
+.review img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+  }
