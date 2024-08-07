@@ -63,6 +63,14 @@ animacao.reveal('.feedback', {
     
     reset :true
 });
+animacao.reveal('#modalidadesPieChart', {
+    origin: 'bottom',
+    distance: '40%',
+    duration:2000,
+    delay:100,
+    
+    reset :true
+});
 
 
 

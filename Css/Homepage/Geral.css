@@ -132,16 +132,7 @@ footer {
     bottom: 0;
     color: rgba(0, 0, 255, 0.851);
 }
-.footer-link a
-{
- display: block;   
- text-align: center;
- text-decoration: none;
- color: white;
- font-weight: 600;
- text-shadow: 1px 0px 2px black;
- padding-top: 10px;
-} 
+
 #copy {
     color: white;
     font-weight: 500;
@@ -166,6 +157,19 @@ footer {
 span {
     color: var(--cor1);
 
+}
+.footer-link ul li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+   
+}.footer-link ul li a:hover
+{
+    transition-duration: 0.5s;
+    transform: translate(-1px, -10px);
+    border-bottom: 2px solid white;
+    padding: 10px;
 }
 
 

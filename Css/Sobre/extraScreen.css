@@ -1,65 +1,81 @@
-@media screen and (min-width: 993px)
-{
-    .team ul 
-    {
-       display: flex;
-       flex-wrap: wrap;
-       align-items: center;
-       justify-content: center;
-      
-       
-    }
-    .team ul li
-    {
-       display: flex;
-       padding: 10px;
-       margin-top: 10px;
-       border: 2px solid var(--cor3);
-       border-radius: 10px;
-       text-align: center;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-      margin: 10px;
-       flex-wrap: wrap;
-       flex-direction: column;
-       flex: 1 1 calc(33.33% - 40px);
-       
-    }
-    .team ul li img {
-        max-width: 50%;
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover;
-      }
-      .technologies {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-      }
-      .technologies ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-      }
-      .technologies li {
-        list-style: none;
-        margin: 10px;
-        padding: 10px 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f5f5f5;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .technologies li img, .technologies li i {
-        margin-bottom: 5px;}
-       
-        
-      }
+@media screen and (min-width: 993px) {
+  .team ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
+
+  }
+
+  .container 
+  {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.448);
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .team ul li {
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid var(--cor3);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 calc(33.33% - 40px);
+
+  }
+
+  .team ul li img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .technologies li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .technologies li img,
+  .technologies li i {
+    margin-bottom: 5px;
+  }
+
+
+}
