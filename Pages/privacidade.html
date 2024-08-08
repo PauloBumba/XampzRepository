@@ -3,78 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suporte e Contato</title>
+  <title>Política de Privacidade</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <link rel="stylesheet" href="../Css/Geral/index.css">
-  <link rel="stylesheet" href="../Css/Suporte/geral.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../Css/Termo/geral.css">
+  <link rel="stylesheet" href="../Css/Termo/mobile.css">
 </head>
 <body>
   <header class="header-container">
     <div class="header-son">
-      <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+      <img src="../Assets/Images/logo-bw.png" alt="Logomarca XampZ">
       <nav id="menu">
         <ul>
           <li><i class="fa-solid fa-house"></i><a href="Home.html">Home</a></li>
           <li><i class="fa-solid fa-user"></i><a href="profile.html">Perfil</a></li>
           <li><i class="fa-solid fa-calendar"></i><a href="calendario.html">Calendário</a></li>
           <li><i class="fa-solid fa-square-poll-vertical"></i><a href="Historic.html">Histórico</a></li>
-          <li id="analise"><a href="analise-estatisticas.html">Análise</a></li>
+          <li id="analise"><i class="fa-solid fa-chart-line"></i><a href="analise-estatisticas.html">Análise</a></li>
         </ul>
       </nav>
       <i class="fa-solid fa-bars" id="burger"></i>
     </div>
   </header>
   <main class="container">
-    <h1>Suporte e Contato</h1>
-    <section class="support">
-      <h2>Precisa de Ajuda?</h2>
-      <p id="first">Entre em contato conosco através do formulário abaixo.</p>
-      <form action="submit_contact.php" method="post">
-        <p><label for="name">Nome:</label></p>
-        <p><input type="text" id="name" name="name" required placeholder="Nome do Usuário"></p>
-        <p><label for="email">Email:</label></p>
-        <p><input type="email" id="email" name="email" required placeholder="Email do Usuário"></p>
-        <p><label for="message">Mensagem:</label></p>
-        <p><textarea id="message" name="message" required></textarea></p>
-        <p><button type="submit">Enviar</button></p>
-      </form>
-    </section>
-    <section class="faq">
-      <h2>Perguntas Frequentes</h2>
-      <div class="faq-item">
-        <h3>Como posso recuperar minha senha?</h3>
-        <p>Você pode recuperar sua senha clicando em <a href="pagina-de-recuperacao.html">"Esqueci minha senha"</a> na página de login.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Como posso alterar meu endereço de email?</h3>
-        <p>Vá para a <a href="pagina-de-perfil.html">página de perfil</a> e atualize seu endereço de email na seção de configurações.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Precisa de mais ajuda?</h3>
-        <p>Para mais opções de suporte, você pode enviar um email para <a href="mailto:suporte@xampz.net">suporte@xampz.net</a> ou ligar para <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
-      </div>
-      <!-- Adicione mais FAQs conforme necessário -->
+    <h1>Política de Privacidade</h1>
+    <section class="privacy-policy">
+      <h2>1. Informações Coletadas</h2>
+      <p>Coletamos informações que você nos fornece diretamente, como dados de cadastro e feedbacks.</p>
+      <h2>2. Uso das Informações</h2>
+      <p>Utilizamos suas informações para fornecer e melhorar nossos serviços, comunicar com você e cumprir com obrigações legais.</p>
+      <h2>3. Compartilhamento de Informações</h2>
+      <p>Não compartilhamos suas informações com terceiros, exceto conforme necessário para prestar nossos serviços ou conforme exigido por lei.</p>
+      <h2>4. Segurança</h2>
+      <p>Implementamos medidas de segurança para proteger suas informações. No entanto, nenhuma transmissão de dados pela internet é 100% segura.</p>
+      <h2>5. Seus Direitos</h2>
+      <p>Você tem o direito de acessar, corrigir ou excluir suas informações pessoais. Entre em contato conosco para exercer esses direitos.</p>
+      <h2>6. Alterações na Política</h2>
+      <p>Podemos atualizar esta política de privacidade periodicamente. Notificaremos sobre mudanças significativas em nosso site.</p>
+      <h2>7. Contato</h2>
+      <p>Para dúvidas sobre nossa política de privacidade, entre em contato através da nossa página de <a href="suporte-contato.html">Suporte</a>.</p>
     </section>
   </main>
   <footer>
     <div>
-      <div id="copy">&copy; XampZ 2024.Net</div>
-      <div class="footer-link">
-        <ul>
-          <li><a href="Pages/sobre.html">Sobre</a></li>
-          <li><a href="Pages/Termos.html">Termos</a></li>
-          <li><a href="Pages/privacidade.html">Privacidade</a></li>
-          <li><a href="Pages/feedback-avaliacoes.html">Feedback e avaliações</a></li>
-        </ul>
+        <div id="copy">&copy; XampZ 2024</div>
+        <div class="footer-link">
+          <ul>
+            <li><a href="Pages/sobre.html">Sobre Nós</a></li>
+            <li><a href="Pages/Termos.html">Termos De Uso </a></li>
+            <li><a href="Pages/suporte-contato.html">Suporte E contato</a></li>
+            <li><a href="Pages/feedback-avaliacoes.html">Feedback e avaliações</a></li>
+            
+          </ul>
+        </div>
       </div>
-    </div>
-    <div id="footer_itens">
-      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-  </footer>
-  <script src="../Js/Geral/index.js"></script>
+      <div id="footer_itens">
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <script src="../Js/Geral/index.js"></script>
 </body>
 </html>
+

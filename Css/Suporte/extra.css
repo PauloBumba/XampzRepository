@@ -1,0 +1,57 @@
+@media screen and (min-width: 992px) {
+    .container {
+      width: 70%;
+      padding: 30px;
+    }
+  
+    .container h1 {
+      font-size: 26px;
+    }
+  
+    .container h2 {
+      font-size: 20px;
+    }
+  
+    input, #message, button {
+      width: 85%;
+    }
+  
+    .faq h2 {
+      font-size: 22px;
+    }
+  
+    .faq h3 {
+      font-size: 19px;
+    }
+    p label{
+        margin-left: 30px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 60%;
+      padding: 40px;
+    }
+  
+    .container h1 {
+      font-size: 30px;
+    }
+  
+    .container h2 {
+      font-size: 22px;
+    }
+  
+    input, #message, button {
+      width: 80%;
+    }
+  
+    .faq h2 {
+      font-size: 24px;
+    }
+  
+    .faq h3 {
+      font-size: 21px;
+    }
+  }
