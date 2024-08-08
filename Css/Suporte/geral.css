@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.container{
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.448);
+    height: auto;
+    padding: 20px;
+}
+.container h1
+{
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    
+}
+.container h2
+{
+    
+    font-size: 18px;
+    margin-bottom:10px ;
+
+}
+#first
+{
+    padding-bottom: 10px;
+    text-align: center;
+    text-indent: 10px;
+}
+input
+{
+    width: 90%;
+    padding:10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px  solid var(--cor3);
+    margin-top: 20px;
+    display: block;
+    margin:5px  auto;
+}
+#message
+{
+   
+    width: 80%;
+    border: 2px solid var(--cor3);
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+   
+}
+button
+{
+   
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border:2px solid var(--cor3);
+    font-weight: 700;
+    display: block;
+    margin:20px auto;
+    background-color: var(--cor1);
+    color: white;
+
+}
+
+button:hover
+{
+    background-color: var(--cor2);
+   transition-duration: 0.5s;
+    transform: translate(-1px,-10px);
+}
+.faq h2{
+    font-size: 20px;
+}
+.faq h3{
+    font-size: 17px;
+    margin-bottom:10px ;
+    background-image: linear-gradient(to right , var(--cor1), transparent);
+    margin-left: -20px;
+    padding: 10px;
+}
+.faq p
+{
+    text-align: justify;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--cor6);
+}

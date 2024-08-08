@@ -4,68 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suporte e Contato</title>
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="../Css/Geral/index.css">
+  <link rel="stylesheet" href="../Css/Suporte/geral.css">
+  <link rel="stylesheet" href="../Css/Suporte/moblie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="top">
+  <header class="header-container">
+    <div class="header-son">
       <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
       <nav id="menu">
         <ul>
-          <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"> login</i></a></li>
-          <li><a href="registro.html"><i class="fa fa-registered" aria-hidden="true"> Registra-te</i></a></li>
+          <li><i class="fa-solid fa-house"></i><a href="Home.html">Home</a></li>
+          <li><i class="fa-solid fa-user"></i><a href="profile.html">Perfil</a></li>
+          <li><i class="fa-solid fa-calendar"></i><a href="calendario.html">Calendário</a></li>
+          <li><i class="fa-solid fa-square-poll-vertical"></i><a href="Historic.html">Histórico</a></li>
+          <li id="analise"><a href="analise-estatisticas.html">Análise</a></li>
         </ul>
       </nav>
-      <i class="fa fa-bars" id="burger"></i>
+      <i class="fa-solid fa-bars" id="burger"></i>
     </div>
   </header>
   <main class="container">
     <h1>Suporte e Contato</h1>
     <section class="support">
       <h2>Precisa de Ajuda?</h2>
-      <p>Entre em contato conosco através do formulário abaixo.</p>
+      <p id="first">Entre em contato conosco através do formulário abaixo.</p>
       <form action="submit_contact.php" method="post">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Enviar</button>
+        <p><label for="name">Nome:</label></p>
+        <p><input type="text" id="name" name="name" required placeholder="Nome do Usuário"></p>
+        <p><label for="email">Email:</label></p>
+        <p><input type="email" id="email" name="email" required placeholder="Email do Usuário"></p>
+        <p><label for="message">Mensagem:</label></p>
+        <p><textarea id="message" name="message" required></textarea></p>
+        <p><button type="submit">Enviar</button></p>
       </form>
-    </section>
+     
     <section class="faq">
       <h2>Perguntas Frequentes</h2>
       <div class="faq-item">
         <h3>Como posso recuperar minha senha?</h3>
-        <p>Você pode recuperar sua senha clicando em "Esqueci minha senha" na página de login.</p>
+        <p>Você pode recuperar sua senha clicando em <a href="RecuperarSenha.html"><strong>Esqueci minha senha</strong></a> na página de Recuperar Senha</p>
       </div>
       <div class="faq-item">
         <h3>Como posso alterar meu endereço de email?</h3>
-        <p>Vá para a página de perfil e atualize seu endereço de email na seção de configurações.</p>
+            <p>Faça o login, vá para o perfil e clique em Configurações para atualizar seu endereço de email.</p>
+  
+      </div>
+      <div class="faq-item">
+        <h3>Precisa de mais ajuda?</h3>
+        <p>Para mais opções de suporte, você pode enviar um email para <a href="mailto:suporte@xampz.net"><strong>suporte@xampz.net</strong></a> ou ligar para <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
       </div>
       <!-- Adicione mais FAQs conforme necessário -->
     </section>
   </main>
   <footer>
     <div>
-        <div id="copy">&copy; XampZ 2024.Net</div>
-        <div class="footer-link">
-          <ul>
-            <li><a href="Pages/sobre.html">Sobre</a></li>
-            <li><a href="Pages/Termos.html">Termos</a></li>
-            <li><a href="Pages/privacidade.html">Privacidade</a></li>
-            <li><a href="Pages/feedback-avaliacoes.html">Feedback e avaliações</a></li>
-            
-          </ul>
-        </div>
+      <div id="copy">&copy; XampZ 2024.Net</div>
+      <div class="footer-link">
+        <ul>
+          <li><a href="Pages/sobre.html">Sobre</a></li>
+          <li><a href="Pages/Termos.html">Termos</a></li>
+          <li><a href="Pages/privacidade.html">Privacidade</a></li>
+          <li><a href="Pages/feedback-avaliacoes.html">Feedback e avaliações</a></li>
+        </ul>
       </div>
-      <div id="footer_itens">
-        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </footer>
-  
+    </div>
+    <div id="footer_itens">
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+  <script src="../Js/Geral/index.js"></script>
 </body>
 </html>
