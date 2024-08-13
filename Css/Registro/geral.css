@@ -8,7 +8,7 @@
 }
 
 body, html {
-    background-color: var(--cor4);
+  background-image: linear-gradient(to bottom , var(--cor1), var(--cor2));
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -21,7 +21,7 @@ img {
 #page {
     max-width: 800px;
     min-width: 300px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312);

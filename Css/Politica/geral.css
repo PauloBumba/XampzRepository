@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.container
+{
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.448);
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+h1 
+{
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+  h2 
+{
+    padding-left: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color:black;
+   
+}
+  p 
+{
+    margin: 10px ;
+   
+    
+    list-style-type: disc;
+    text-align: justify;
+}
+
+.container a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--cor6);
+}
+@media screen and (min-width: 992px) {
+    p{
+        text-indent: 100px;
+    }
+}

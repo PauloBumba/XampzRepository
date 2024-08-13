@@ -29,6 +29,10 @@ body {
     background-color: var(--cor4);
 
 }
+#menu ul>li >a
+{
+    font-weight: 600;
+}
 
 .top {
     display: flex;

@@ -367,7 +367,7 @@
         }
 
     }
-
+   
     #testemunhos button a {
         text-decoration: none;
         color: black;
@@ -412,6 +412,7 @@
         color: white;
         text-decoration: none;
         margin: 10px;
+        font-weight: 600;
     }
     .footer-link ul li a:hover
     {
@@ -419,5 +420,6 @@
         transform: translate(-1px, -10px);
         border-bottom: 2px solid white;
         padding: 10px;
+        cursor: pointer;
     }
 }
