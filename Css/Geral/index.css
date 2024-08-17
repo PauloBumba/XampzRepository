@@ -167,20 +167,27 @@ nav a:hover {
         text-align: center;
 
     }
+    .containers h3{
+        font-weight: 200;
+        color: black;
+    }
 
-    .containers h3
+    .containers .term >a ,.containers .avalition >a  
     {
-       margin: 5px 0px;
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 5px 10px;
+        text-decoration: none;
+        font-weight: 650;
+        color: white;
 
     }
-    .containers a
-     {
-       
+    .containers .team >a
+    {
         text-decoration: none;
-        font-weight: bolder;
+        font-weight: 650;
         color: white;
-        text-align: center;
-        cursor: pointer;
+        margin: 5px;
     }
 
 
