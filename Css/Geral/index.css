@@ -85,28 +85,13 @@ footer {
     font-weight: 600;
 }
 
-#footer_itens a {
-    text-decoration: none;
-    margin: 10px;
-    color: white;
-    text-shadow: 1px 0px 1px black;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-#footer_itens a:hover, .footer-link a:hover {
-    transition-duration: 0.5s;
-    transform: translate(-10px, -10px);
-    border-bottom: 2px solid white;
-    padding: 10px;
-}
-
 nav a:hover {
     transform: translate(-1px, -10px);
     transition-duration: 0.7s;
     padding: 10px;
     border-bottom: 2px solid white;
 }
+
 
 @media screen and (min-width: 991.99px) {
     #burger {
@@ -130,32 +115,21 @@ nav a:hover {
         text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.411);
     }
 
-    .footer-link {
-        display: flex;
-        flex-wrap: nowrap; /* Adicionado para evitar quebra de linha */
-    }
 
-    .footer-link a {
-        text-decoration: none;
-        margin-top: 10px;
-        color: white;
-        font-weight: 600;
-        margin: 10px;
-    }
 }
 
 @media screen and (max-width: 992px) {
-    
-    .footer-link ul li 
-    {
+
+    .footer-link ul li {
         margin-top: 5px;
     }
-    .footer-link ul li a
-    {
-        color:white;
+
+    .footer-link ul li a {
+        color: white;
         text-decoration: none;
         font-weight: 600;
     }
+
     #menu-burger {
         display: none;
     }
@@ -182,4 +156,32 @@ nav a:hover {
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.449);
         text-decoration: none;
     }
+
+    .containers {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .containers h3
+    {
+       margin: 5px 0px;
+
+    }
+    .containers a
+     {
+       
+        text-decoration: none;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
 }
