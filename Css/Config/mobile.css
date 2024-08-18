@@ -2,7 +2,7 @@
 @media screen and (max-width: 992px) 
 {
     .settings-section{
-        width: 90%;
+        width: 95%;
        
 
         
@@ -15,5 +15,7 @@
         width: 90%;
         display: block;
         margin: 7px auto;
+    }.settings-section1{
+        width: 95%;
     }
 }
