@@ -1,0 +1,19 @@
+
+@media screen and (max-width: 992px) 
+{
+    .settings-section{
+        width: 90%;
+       
+
+        
+    }
+    .form-group input{
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid var(--cor3);
+
+        width: 90%;
+        display: block;
+        margin: 7px auto;
+    }
+}

@@ -1,0 +1,71 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.settings-section{
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    padding: 20px;
+   box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.43);
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.page-header >p,h1{
+    text-align: center;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+    margin: 10px;
+    
+}
+.save-button-container >button , #Alter{
+    text-align: center;
+    padding: 13px;
+   display: block;
+   margin: auto;
+   border-radius: 6px;
+   border: none;
+   background-color: var(--cor1);
+   font-weight: 600;
+   color: white;
+
+}
+.save-button-container >button:hover ,#Alter:hover{
+    transition-duration: 0.7s;
+    background-color: var(--cor2);
+    transform: translate(-1px,-10px);
+}
+#Alter{
+    margin-top: 25px;
+}
+.notifications{
+    text-align: center;
+    margin: 10px;
+    input{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    input:hover{
+        accent-color: var(--cor1);
+        padding: 5px;
+    }
+
+    
+}
+.notifications> select{
+    
+width: 80%;
+    
+}
+#settings-form select{
+
+width: 80%;
+border: 2px solid var(--cor3);
+padding: 5px;
+border-radius: 5px;
+display: block;
+margin: 10px auto;
+}

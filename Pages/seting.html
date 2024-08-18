@@ -4,77 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações</title>
+    
+    <link rel="shortcut icon" href="../Assets/Images/logo-bw.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../Css/Geral/index.css">
+    <link rel="stylesheet" href="../Css/Config/mobile.css">
+    <link rel="stylesheet" href="../Css/Config/geral.css">
 </head>
 <body>
-    <header>
-        <h1>Configurações</h1>
-        <nav>
-            <a href="index.html">Home</a> | <a href="profile.html">Perfil</a> | <a href="settings.html">Configurações</a>
-        </nav>
+    <header class="header-container">
+        <div class="header-son">
+            <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html"> <i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="../Pages/profile.html"><i class="fa-solid fa-user"></i>Perfil</a></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars" id="burger"></i>
+        </div>
     </header>
     
     <main>
+        
+      
         <section class="settings-section">
-            <h2>Preferências</h2>
-
-            <form id="settings-form">
-                <!-- Seção de Idioma -->
-                <div class="form-group">
-                    <label for="language">Idioma:</label>
-                    <select id="language" name="language">
-                        <option value="pt-br">Português (Brasil)</option>
-                        <option value="en">Inglês</option>
-                        <option value="es">Espanhol</option>
-                        <!-- Adicione mais opções de idioma conforme necessário -->
-                    </select>
-                </div>
-
-                <!-- Seção de Tema -->
-                <div class="form-group">
-                    <label for="theme">Tema:</label>
-                    <select id="theme" name="theme">
-                        <option value="light">Claro</option>
-                        <option value="dark">Escuro</option>
-                    </select>
-                </div>
-
-                <!-- Seção de Notificações -->
-                <div class="form-group">
-                    <label for="notifications">Notificações:</label>
-                    <input type="checkbox" id="email-notifications" name="notifications" value="email">
-                    <label for="email-notifications">Notificações por E-mail</label><br>
-                    <input type="checkbox" id="sms-notifications" name="notifications" value="sms">
-                    <label for="sms-notifications">Notificações por SMS</label>
-                </div>
-
-                <!-- Botão de Salvar Configurações -->
-                <button type="submit">Salvar Configurações</button>
-            </form>
+            <div class="page-header">
+                <h1>Configurações</h1>
+                <p>Gerencie suas preferências e informações da conta</p>
+            </div>
+            
+            <section class="settings-section">
+                <h2>Conta</h2>
+                <form id="account-settings-form" autocomplete="on">
+                    <!-- Alterar Senha -->
+                    <div class="form-group">
+                        <p><label for="current-password">Senha Atual:</label></p>
+                        <input type="password" id="current-password" name="current-password" required>
+                    </div>
+                    <div class="form-group">
+                        <p><label for="new-password">Nova Senha:</label></p>
+                        <input type="password" id="new-password" name="new-password" required>
+                    </div>
+                    <div class="form-group">
+                        <p><label for="confirm-password">Confirmar Nova Senha:</label></p>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    
+                    <!-- Botão de Alterar Senha -->
+                    <button type="submit" id="Alter">Alterar Senha</button>
+                </form>
+            </section>
+            <div class="settings-section">
+                <form id="settings-form">
+                    <h2>Preferências</h2>
+                    
+                    <div class="form-group">
+                        <p><label for="language">Idioma:</label></p>
+                        <select id="language" name="language">
+                            <option value="pt-br">Português (Brasil)</option>
+                            <option value="en">Inglês</option>
+                            <option value="es">Espanhol</option>
+                           
+                        </select>
+                    </div>
+                   
+                    <div class="form-group">
+                        <p><label for="theme">Tema:</label></p>
+                        <select id="theme" name="theme">
+                            <option value="light">Claro</option>
+                            <option value="dark">Escuro</option>
+                        </select>
+                    </div>
+                    <!-- Seção de Notificações -->
+                    <div class="notifications">
+                        <h4>Notificações</h4>
+                        <input type="checkbox" id="email-notifications" name="notifications" value="email">
+                        <label for="email-notifications">Notificações por E-mail</label><br>
+                        <input type="checkbox" id="sms-notifications" name="notifications" value="sms">
+                        <label for="sms-notifications">Notificações por SMS</label>
+                    </div>
+                </form>
+            </div>
+            <div class="save-button-container">
+                <button type="submit" form="settings-form">Salvar Configurações</button>
+            </div>
         </section>
 
-        <section class="settings-section">
-            <h2>Conta</h2>
+        
+       
 
-            <form id="account-settings-form">
-                <!-- Alterar Senha -->
-                <div class="form-group">
-                    <label for="current-password">Senha Atual:</label>
-                    <input type="password" id="current-password" name="current-password" required>
-                </div>
-                <div class="form-group">
-                    <label for="new-password">Nova Senha:</label>
-                    <input type="password" id="new-password" name="new-password" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirmar Nova Senha:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-                
-                <!-- Botão de Alterar Senha -->
-                <button type="submit">Alterar Senha</button>
-            </form>
-        </section>
+        <!-- Botão de Salvar Configurações Moved -->
+        
     </main>
 
     <footer class="containers">
@@ -102,6 +124,6 @@
             <h3>&copy; Xampz.Net 2024</h3>
         </section>
     </footer>
-    
+    <script src="../Js/Geral/index.js"></script>
 </body>
 </html>
