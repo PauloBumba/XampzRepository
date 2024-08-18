@@ -101,6 +101,17 @@ nav a:hover {
     padding: 10px;
     transition-duration: 0.5s;
 }
+.containers .icons >a {
+    font-size: 25px;
+   
+    color: #fff9ff;
+    width: 36px;
+    height: 36px;
+    margin:10px ;
+    place-items: center;
+    border-radius: 50%;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.449);
+}
 
 
 @media screen and (min-width: 991.99px) {
@@ -124,7 +135,27 @@ nav a:hover {
         font-weight: 600;
         text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.411);
     }
+    
+    .containers a {
+        text-decoration: none;
+        font-weight: 650;
+        color: white;
+        margin: 5px;
+    }
+    
+    .containers {
+        flex-direction: row;
+    }
 
+    .containers section {
+        flex: 1;
+        padding: 0 20px;
+       
+    }
+
+    .containers .mark {
+        margin-top: 40px;
+    }
 
 }
 
@@ -182,17 +213,7 @@ nav a:hover {
         color: black;
     }
    
-    .containers .icons >a {
-        font-size: 25px;
-       
-        color: #fff9ff;
-        width: 36px;
-        height: 36px;
-        margin:10px ;
-        place-items: center;
-        border-radius: 50%;
-        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.449);
-    }
+   
 
     .containers .term >a ,.containers .avalition >a  
     {
