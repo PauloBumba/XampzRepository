@@ -3,9 +3,6 @@
 {
     .settings-section{
         width: 95%;
-       
-
-        
     }
     .form-group input{
         height: 30px;
@@ -17,5 +14,9 @@
         margin: 7px auto;
     }.settings-section1{
         width: 95%;
+        background-color: white;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.43);
+        border-radius: 10px;
+      
     }
 }
