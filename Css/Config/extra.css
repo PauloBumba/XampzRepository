@@ -1,4 +1,145 @@
-@media screen and (min-width:991.99px)
-{
-    
+/* Ajustes para telas maiores */
+@media screen and (min-width: 1200px) {
+    .settings-section {
+        width: 60%;
+        padding: 30px;
+        margin: 50px auto;
+    }
+
+    .page-header h1 {
+        font-size: 2.5em;
+    }
+
+    .page-header p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .save-button-container > button, #Alter {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+
+    .notifications input {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    #settings-form select, 
+    .notifications > select {
+        width: 60%;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .form-group input {
+        height: 40px;
+        font-size: 1em;
+    }
+}
+
+/* Geral */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-section {
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.43);
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.page-header > p, h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.save-button-container > button, #Alter {
+    text-align: center;
+    padding: 13px;
+    display: block;
+    margin: auto;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--cor1);
+    font-weight: 600;
+    color: white;
+}
+
+.save-button-container > button:hover, #Alter:hover {
+    transition-duration: 0.7s;
+    background-color: var(--cor2);
+    transform: translate(-1px, -10px);
+}
+
+#Alter {
+    margin-top: 25px;
+}
+
+.notifications {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.notifications input {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.notifications input:hover {
+    accent-color: var(--cor1);
+    padding: 5px;
+}
+
+.notifications > select {
+    width: 80%;
+}
+
+#settings-form select {
+    width: 80%;
+    border: 2px solid var(--cor3);
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+#account-settings-form {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .settings-section {
+        width: 95%;
+    }
+
+    .form-group input {
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid var(--cor3);
+        width: 90%;
+        display: block;
+        margin: 7px auto;
+    }
+
+    .settings-section1 {
+        width: 95%;
+        background-color: white;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.43);
+        border-radius: 10px;
+    }
 }
