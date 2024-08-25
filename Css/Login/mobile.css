@@ -35,7 +35,7 @@ main{
     position: absolute;
     background-color:white;
     width: 320px;
-    height: 550px;
+    min-height: 650px;
     top: 50%;
     left:50%;
     transform:  translate(-50%,-50%);
@@ -131,4 +131,56 @@ main{
     color: #04bf0a;
     font-weight: bolder;
     text-decoration: none;
+}/* Estilos para botões de login social no mobile */
+/* Estilo para a linha horizontal, o botão e os ícones sociais */
+.divider-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider {
+    width: 70%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    color: #333; /* Cor dos ícones, ajuste conforme necessário */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Cor dos ícones ao passar o mouse sobre eles */
+}
+.fa-facebook-f{
+   
+    border: 1px solid var(--cor3);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 30px;
+    transition-duration: 0.5s;
+    color: #007bff;
+
+}
+.fa-facebook-f:hover, .fa-google:hover{
+  
+   transition-duration: 0.5s;
+   background-image: linear-gradient(to right , var(--cor1),var(--cor2));
+   
+}
+.fa-google{
+    border: 1px solid var(--cor3);
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 30px;
+    transition-duration: 0.5s;
+    color: rgba(255, 0, 0, 0.8);
 }
