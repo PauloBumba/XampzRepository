@@ -43,6 +43,11 @@ main{
     transition: width 3s, height 3s ease-in-out;
 
 }
+h1{
+    margin: 10px;
+    text-align: center;
+    font-weight: 500;
+}
 .HeaderLogin{
    margin-top: 20px;
     text-align: center;
@@ -108,7 +113,7 @@ main{
 .footer{
     text-align: center;
     margin-top: 15px;
-    margin: 10px;
+    margin: 25px;
    
    
 }
