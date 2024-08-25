@@ -1,7 +1,8 @@
 @charset "Utf-8";
 
-@media screen and (min-width: 993px){
+
+@media screen and (min-width: 698px){
     .tela{
-        width:450px;
+        width:500px;
     }
 }
