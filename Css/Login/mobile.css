@@ -27,20 +27,18 @@ main{
   height: 100vh;  
     position: relative;
     background-image:  linear-gradient(to bottom, var(--cor1), var(--cor2));
-    background-color: var(--cor5)
-
+    background-color: var(--cor5);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
 }
 
 .tela{
     position: absolute;
     background-color:white;
-    width: 320px;
+    width: 350px;
     min-height: 650px;
-    top: 50%;
-    left:50%;
-    transform:  translate(-50%,-50%);
-    border-radius: 10px;
-    overflow: hidden;
+     border-radius: 10px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.619);
     transition: width 3s, height 3s ease-in-out;
 
@@ -110,6 +108,7 @@ main{
 .footer{
     text-align: center;
     margin-top: 15px;
+    margin: 10px;
    
    
 }
