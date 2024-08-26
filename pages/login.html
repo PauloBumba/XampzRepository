@@ -2,12 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximim-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="../Assets/Images/logo-bw.png" type="image/x-icon">    
     <link rel="stylesheet" href="../Css/Login/mobile.css">
     <link rel="stylesheet" href="../Css/Login/tablet.exta.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- CDN do Font Awesome -->
     <title>Login</title>
+    
+
+   
 </head>
 <body>
     <main>
@@ -18,12 +21,17 @@
            </aside>
            <aside class="MainLogin"> 
                 <form action="" method="post" autocomplete="on">
-                    <p>
-                        <label for="nome"></label>
-                        <input type="text" name="" id="nome" required placeholder="Email ou Nome de usuário">
+                    <p class="input-group">
+                        <div class="input-icon">
+                            <input type="text" name="" id="nome" required placeholder="Email ou Nome de usuário">
+                            <i class="fas fa-user"></i>
+                        </div>
                     </p>
-                    <p>
-                        <input type="password" name="" id="senha" required placeholder="Senha">
+                    <p class="input-group">
+                        <div class="input-icon">
+                            <input type="password" name="" id="senha" required placeholder="Senha">
+                            <i class="fas fa-lock"></i>
+                        </div>
                     </p>
                     <p>
                         <p id="rec"><a href="./RecuperarSenha.html"><small>Esqueceu a senha?</small></a></p>
