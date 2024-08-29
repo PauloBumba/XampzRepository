@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 img {
-    width: 35%;
+    width: 45%;
 }
 :root{
     --cor1 :  #07980cd7;
@@ -72,7 +72,7 @@ h1{
    margin-bottom: 15px;
    margin-left: 16px;  
    border-radius: 5px;
-   border: 1px solid var(--cor1);
+   border: 1px solid var(--cor3);
 
 }
 #entrar{
@@ -166,7 +166,7 @@ h1{
 }
 .fa-facebook-f{
    
-    border: 1px solid var(--cor1);
+    border: 1px solid var(--cor3);
     padding: 15px;
     border-radius: 5px;
     font-size: 30px;
@@ -181,38 +181,10 @@ h1{
    
 }
 .fa-google{
-    border: 1px solid var(--cor1);
+    border: 1px solid var(--cor3);
     padding: 14px;
     border-radius: 5px;
     font-size: 30px;
     transition-duration: 0.5s;
     color: rgba(255, 0, 0, 0.8);
-}
-.input-group {
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.input-icon {
-    position: relative;
-    width: 100%;
-}
-
-.input-icon input {
-    width: 100%;
-    padding-right: 35px; /* Espaço para o ícone à direita */
-    box-sizing: border-box;
-}
-
-.input-icon i {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-80%);
-    color: gray;
-    font-size: 20px;
-    margin-right: 10px;
-   
-   
-   
 }
