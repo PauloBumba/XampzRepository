@@ -26,15 +26,15 @@ body
 main{
   height: 100vh;  
     position: relative;
-    background-image:  linear-gradient(to bottom, var(--cor1), var(--cor2));
-    background-color: var(--cor5);
+    
+    background-color: var(--cor4);
     display: flex;
     align-items:center ;
     justify-content: center;
 }
 
 .tela{
-    position: absolute;
+   
     background-color:white;
     width: 85%;
     min-height: 650px;
@@ -153,13 +153,7 @@ h1{
     margin: 20px 0;
 }
 
-.social-icon {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
-    color: #333; /* Cor dos ícones, ajuste conforme necessário */
-    text-decoration: none;
-}
+
 
 .social-icon:hover {
     color: #007bff; /* Cor dos ícones ao passar o mouse sobre eles */
@@ -187,4 +181,19 @@ h1{
     font-size: 30px;
     transition-duration: 0.5s;
     color: rgba(255, 0, 0, 0.8);
+}
+.fa-user, .fa-lock{
+    position: absolute;
+    right: 15%;
+    text-align: center;
+    transform: translateY(15%);
+   
+    background-position: center center;
+    background-size: cover;
+   
+    width: 20px;
+   
+    font-size: 25px;
+    width: 30px;
+    height: auto;
 }

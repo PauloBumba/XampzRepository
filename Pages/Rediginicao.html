@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximim-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.js"
-        integrity="sha512-C5vaj0THdudBZn7DvfkEb/Bt12RDCn2oPOyWN1bsH6NPSw4xJ1eA8NE5QsgURl6cCAd7pvvqtrums8iGcoJU6g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="shortcut icon" href="../static/images/logo-bw.png" type="image/x-icon">
     <link rel="stylesheet" href="../Css/Geral/index.css">
     <link rel="stylesheet" href="../Css/RecuperarSenha/mobile.css">
     <link rel="stylesheet" href="../Css/RecuperarSenha/tablet.exta.css">
-    <title>Recuperar Senha</title>
+    <title>Redefinir Senha</title>
 </head>
-
 <body>
     <header class="header-container">
         <div class="header-son">
             <img src="../Assets/Images/logo-bw.png" alt="Logomarca">
-           
             <nav id="menu">
                 <ul>
-                    <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login
-                        </a></li>
-                    <li><a href="Cadastro.html"><i class="fa fa-registered" aria-hidden="true"> </i>Registra-te
-                        </a> </li>
+                    <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+                    <li><a href="Cadastro.html"><i class="fa fa-registered" aria-hidden="true"></i>Registra-te</a></li>
                 </ul>
             </nav>
             <i class="fa-solid fa-bars" id="burger"></i>
-
         </div>
-
-
     </header>
     <main>
-
-        <form action="" method="post" autocomplete="on" class="form">
-            <h1>Recuperar Senha</h1>
-            <input type="text" name="" id="" required autocomplete="email" placeholder="Digite aqui o Email Valido">
-            <p>
-                <input type="submit" value="Recuperar" id="sub">
-            </p>
-        </form>
-       
-        
+        <div class="container mt-5">
+            <form action="" method="post" autocomplete="on" class="form">
+                <h1>Recuperar Senha</h1>
+                <input type="text" name="" id="" required autocomplete="email" placeholder="Digite nova senha">
+                <input type="text" name="" id="" required autocomplete="email" placeholder=" Confirmar nova senha">
+                <p>
+                    <input type="submit" value="Salvar" id="sub">
+                </p>
+            </form>
+           
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -59,27 +47,23 @@
                 <p><a href="#">Termos de Uso</a></p>
                 <hr>
             </section>
-    
             <section class="footer-section">
                 <h3>Equipe</h3>
                 <p><a href="#">Sobre Nós</a></p>
                 <hr>
             </section>
-    
             <section class="footer-section">
                 <h3>Feedback e Suporte</h3>
                 <p><a href="#">Feedback e Avaliações</a></p>
                 <p><a href="#">Suporte e Contato</a></p>
                 <hr>
             </section>
-            
             <div class="footer-section social-icons">
                 <h3>Siga-nos nas Redes Sociais</h3>
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-    
             <div class="footer-section copyright">
                 <p>&copy; XampZ.Net 2024</p>
             </div>
@@ -88,5 +72,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="../Js/RecuperarSenha/index.js"></script>
 </body>
-
 </html>

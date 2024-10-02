@@ -34,52 +34,15 @@ body {
     font-weight: 600;
 }
 
-.top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 3;
 
-}
 
-header {
-    min-height: 120px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
-    width: 100%;
-    position: sticky;
-    top: 0;
-    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.448);
-    background-color: var(--cor6);
 
-    z-index: 1000;
-
-}
 
 ul {
     list-style-type: none;
 }
 
-footer {
-    margin-top: 10px;
-    width: 100%;
 
-    bottom: o;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 8% 24px 8%;
-    align-items: center;
-    padding-top: 30px;
-    background-color: var(--cor6);
-
-
-}
 
 #copy {
     color: white;
@@ -170,12 +133,13 @@ main {
 .form {
 
     width: 330px;
-    height: 250px;
+    height: 300px;
     background-color: white;
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312);
     border-radius: 10px;
     transition: width 1s, height 1s ease-in-out;
+   
 
 }
 
@@ -194,6 +158,8 @@ input {
     border: 1px solid var(--cor1);
     margin-top: 30px;
     margin-left: 30px;
+  
+   
 }
 
 #sub {
